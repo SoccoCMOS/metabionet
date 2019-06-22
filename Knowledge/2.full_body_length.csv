@@ -1,0 +1,254 @@
+"gbif_key";"rank";"scientificName";"Length_min_mm";"Length_max_mm";"reference";"remark";"X";"X.1"
+2119156;"GENUS";"Eosentomon";0,7;1,3;"10.3897/zookeys.742.22664";"";NA;NA
+8280877;"GENUS";"Protocyclidium sinica";0,023;0,03;"Acta Protozool. (2011) 50: 219–234 ";"";NA;NA
+7904860;"SPECIES";"Caudiholosticha sylvatica";0,15;0,21;"Berger H. () Monograph of the Urostyloidea (Ciliophora, Hypotricha)";"";NA;NA
+8380316;"GENUS";"Caudiholosticha";0,08;0,3;"Berger H. () Monograph of the Urostyloidea (Ciliophora, Hypotricha)";"terrestrial species";NA;NA
+8254023;"SPECIES";"Anoplophrya marylandensis";NA;NA;"Berger H. () Monograph of the Urostyloidea (Ciliophora, Hypotricha)";"";NA;NA
+7784418;"SPECIES";"Anteholosticha gracilis";0,12;0,12;"Berger H. () Monograph of the Urostyloidea (Ciliophora, Hypotricha)";"";NA;NA
+2122150;"GENUS";"Megalothorax";0,4;0,5;"BETSI";"";NA;NA
+4537148;"SPECIES";"Sminthurinus bimaculatus";0,45;0,7;"BETSI";"";NA;NA
+2120580;"SPECIES";"Sminthurides aquaticus";0,3;1;"BETSI";"";NA;NA
+2120343;"SPECIES";"Isotomiella minor";0,7;1,2;"BETSI";"";NA;NA
+2119703;"GENUS";"Tetracanthella";1;1,4;"BETSI";"";NA;NA
+2121254;"GENUS";"Ceratophysella";1,1;1,6;"BETSI";"";NA;NA
+7737552;"GENUS";"Vertagopus";1,5;1,8;"BETSI";"";NA;NA
+2122146;"SPECIES";"Podura aquatica";1;2;"BETSI";"";NA;NA
+2120754;"SPECIES";"Entomobrya multifasciata";1,5;2;"BETSI";"";NA;NA
+2120836;"SPECIES";"Willowsia nigromaculata";2,5;2;"BETSI";"";NA;NA
+2120412;"GENUS";"Entomobrya ";1,5;2,2;"BETSI";"";NA;NA
+2120372;"SPECIES";"Folsomia quadrioculata";0,9;2,5;"BETSI";"";NA;NA
+2120510;"SPECIES";"Protaphorura armata";1,1;2,5;"BETSI";"";NA;NA
+2120880;"GENUS";"Lepidocyrtus";1,5;2,5;"BETSI";"";NA;NA
+2155886;"SPECIES";"Robertus neglectus";1,5;2,5;"BETSI";"";NA;NA
+2120383;"SPECIES";"Folsomia candida";0,7;3;"BETSI";"";NA;NA
+2120899;"SPECIES";"Lepidocyrtus paradoxus";3;3;"BETSI";"";NA;NA
+5167064;"SPECIES";"Sminthurus viridis";3;3;"BETSI";"";NA;NA
+1037319;"SPECIES";"Trechus obtusus";3,2;4;"BETSI";"French sources";NA;NA
+4476667;"SPECIES";"Trechus quadristriatus";3,2;4;"BETSI";"French sources";NA;NA
+2120979;"SPECIES";"Orchesella villosa";3,3;5,5;"BETSI";"";NA;NA
+5166886;"SPECIES";"Isotoma viridis";3;6;"BETSI";"";NA;NA
+5023058;"SPECIES";"Notiophilus rufipes";5;6,5;"BETSI";"French sources";NA;NA
+4538324;"SPECIES";"Tetrodontophora bielanensis";5;9;"BETSI";"";NA;NA
+1419845;"SPECIES";"Forficula auricularia";12,5;21;"BETSI";"";NA;NA
+1020585;"SPECIES";"Polydesmus coriaceus";14;30;"BETSI";"French sources";NA;NA
+1013578;"SPECIES";"Cylindroiulus caeruleocinctus";20;30;"BETSI";"French sources";NA;NA
+2230246;"SPECIES";"Lithobius forficatus";18;32;"BETSI";"";NA;NA
+2230514;"SPECIES";"Lithobius variegatus";18;33;"BETSI";"";NA;NA
+4410498;"SPECIES";"Satchellius mammalis";32;41;"BETSI";"French sources";NA;NA
+4410653;"SPECIES";"Lumbricus castaneus";35;60;"BETSI";"French sources";NA;NA
+2307760;"SPECIES";"Aporrectodea rosea";40;70;"BETSI";"French sources";NA;NA
+4410938;"SPECIES";"Allolobophora chlorotica";50;80;"BETSI";"French sources";NA;NA
+2307759;"SPECIES";"Aporrectodea caliginosa";60;90;"BETSI";"French sources";NA;NA
+2307766;"SPECIES";"Octolasion cyaneum";80;140;"BETSI";"French sources";NA;NA
+2307757;"SPECIES";"Aporrectodea longa";130;170;"BETSI";"French sources";NA;NA
+4410657;"SPECIES";"Lumbricus terrestris";130;250;"BETSI";"French sources";NA;NA
+7576647;"SPECIES";"Lumbricus centralis";130;250;"BETSI";"French sources";NA;NA
+8161409;"SPECIES";"Lumbricus friendi";90;NA;"BETSI";"French sources";NA;NA
+7902508;"GENUS";"Pseudochilodonopsis";0,04;0,124;"DOI 10.1099/ijsem.0.000580";"";NA;NA
+3194568;"SPECIES";"Spumella vulgaris";0,0032;0,0059;"doi:  [10.1111/jeu.12287]";"";NA;NA
+3194566;"GENUS";"Spumella lacusvadosi";0,0015;0,0071;"doi:  [10.1111/jeu.12287]";"";NA;NA
+3194566;"GENUS";"Spumella";0,0015;0,0086;"doi:  [10.1111/jeu.12287]";"";NA;NA
+2253647;"SPECIES";"Hypsibius convergens";166;275;"DOI: 10.1007/s11676-008-0062-z";"";NA;NA
+8410027;"GENUS";"Euplotes qatarensis";0,05;0,065;"doi: 10.1111/jeu.12305";"";NA;NA
+8136143;"GENUS";"Colpoda";0,04;0,1;"DOI: 10.2307/4444570";"";NA;NA
+8374779;"SPECIES";"Euplotes trisulcatus";0,035;0,05;"DOI: 10.4467/16890027AP.13.008.1087";"";NA;NA
+7866880;"SPECIES";"Euplotes balteatus";0,03;0,15;"DOI: 10.4467/16890027AP.13.008.1087";"";NA;NA
+7735326;"SPECIES";"Tachysoma pellionellum";0,07;0,09;"doi:10.4467/16890027AP.17.020.7822";"";NA;NA
+4406135;"GENUS";"Veigaia";0,5;1;"European mites of the  genus  Veigaia  Oudemans, 1905 (Acari,  Gamasida:  Veigaiaidae)";"";NA;NA
+4548736;"SPECIES";"Veigaia nemorensis";1;1;"European mites of the  genus  Veigaia  Oudemans, 1905 (Acari,  Gamasida:  Veigaiaidae)";"";NA;NA
+3201168;"GENUS";"Botryochloris";0,003;0,03;"Freshwater Algae of North America: Ecology and Classification";"";NA;NA
+2280384;"SPECIES";"Prodesmodora circulata";0,7;0,8;"Freshwater Nematodes: Ecology and Taxonomy";"";NA;NA
+7350999;"GENUS";"Nygolaimus";1;4;"Freshwater Nematodes: Ecology and Taxonomy";"";NA;NA
+4556321;"SPECIES";"Pratylenchoides ritteri";0,65;0,93;"http://bionames.org/bionames-archive/issn/0018-0130/37/154.pdf";"";NA;NA
+5266190;"SPECIES";"Nitzschia pusilla";0,01;0,03;"http://dbmuseblade.colorado.edu";"";NA;NA
+5265849;"SPECIES";"Hantzschia amphioxys";0,04;0,05;"http://diatom.ansp.org";"";NA;NA
+8098413;"SPECIES";"Bryometopus pseudochilodon";0,04;0,08;"http://eol.org/data_objects/5694493";"";NA;NA
+8108604;"SPECIES";"Bryometopus sphagni";0,05;0,18;"http://eol.org/pages/2909643/overview";"";NA;NA
+4556193;"SPECIES";"Merlinius brevidens";0,54;0,69;"http://nemaplex.ucdavis.edu";"";NA;NA
+2282607;"GENUS";"Pungentus";1,51;1,94;"http://nemaplex.ucdavis.edu";"";NA;NA
+4912196;"GENUS";"Eocercomonas";0,005;0,015;"http://protist.ru ";"data for E. ramosa";NA;NA
+3200900;"GENUS";"Xanthonema";0,004;0,07;"http://www.algaebase.org";"";NA;NA
+7566978;"GENUS";"Pseudoplatynematum denticulatum";0,023;0,065;"http://www.eko.uj.edu.pl/ap";"";NA;NA
+2124312;"GENUS";"Chthonius";1,3;2,5;"http://www.jorgenlissner.dk/pseudoscorpions.aspx";"";NA;NA
+7960295;"SPECIES";"Pseudoplatyophrya nana";0,015;0,028;"http://www.wfoissner.at/data_prot/Puytorac_etal_1983_423-434.pdf";"";NA;NA
+3202401;"GENUS";"Siluania monomastiga";0,0015;0,003;"https://doi.org/10.1016/S0932-4739(98)80010-2";"";NA;NA
+3201016;"GENUS";"Pseudopleurochloris antarctica";0,004;0,004;"https://doi.org/10.1080/09670269910001736202";"";NA;NA
+8118209;"SPECIES";"Bresslaua vorax";0,035;0,1;"https://doi.org/10.1111/j.1550-7408.1960.tb00703.x";"";NA;NA
+7507829;"SPECIES";"Luticola permuticopsis";0,0017;0,026;"https://hal-univ-rennes1.archives-ouvertes.fr/hal-01684482/file/The%20genus%20Luticola%20%28Bacillariophyta%29.pdf";"";NA;NA
+4900166;"GENUS";"Rhogostoma";0,008;0,015;"https://www.arcella.nl";"";NA;NA
+4900166;"GENUS";"Rhogostoma schuessleri";0,015;0,021;"https://www.arcella.nl";"";NA;NA
+5730700;"SPECIES";"Trinema lineare";0,016;0,03;"https://www.arcella.nl";"";NA;NA
+4378507;"GENUS";"Corythion dubium";0,033;0,043;"https://www.arcella.nl";"";NA;NA
+4886653;"GENUS";"Capsellina";0,035;0,045;"https://www.arcella.nl";"";NA;NA
+5436536;"SPECIES";"Vampyrella pendula";0,04;0,05;"https://www.arcella.nl";"";NA;NA
+5730694;"SPECIES";"Euglypha rotunda";0,05;0,06;"https://www.arcella.nl";"";NA;NA
+5425542;"SPECIES";"Trinema enchelys";0,03;0,1;"https://www.arcella.nl";"";NA;NA
+5730696;"SPECIES";"Euglypha tuberculata";0,055;0,1;"https://www.arcella.nl";"";NA;NA
+3194385;"GENUS";"Chlamydomyxa labyrinthuloides";0,15;0,18;"https://www.arcella.nl";"";NA;NA
+8255906;"GENUS";"Heterophrys";35;70;"https://www.arcella.nl";"";NA;NA
+5899723;"SPECIES";"Massisteria marina";0,0025;0,005;"https://www.int-res.com/articles/meps/62/m062p011.pdf";"";NA;NA
+1198632;"SPECIES";"Barynotus moerens";7;8,5;"https://www.kerbtier.de";"";NA;NA
+1198651;"SPECIES";"Barynotus obscurus";8;9,5;"https://www.kerbtier.de";"";NA;NA
+1195102;"SPECIES";"Otiorhynchus armadillo";7;12;"https://www.kerbtier.de";"";NA;NA
+5899695;"GENUS";"Paracercomonas";0,0085;0,012;"https://www.nies.go.jp";"";NA;NA
+3195227;"GENUS";"Paraphysomonas";0,006;0,0136;"https://www.nies.go.jp";"";NA;NA
+9762970;"GENUS";"Ochromonas";0,005;0,03;"https://www.nies.go.jp";"";NA;NA
+NA;"";"Peregrinia clavideferens";0,014;0,04;"https://www.nies.go.jp";"";NA;NA
+7989755;"GENUS";"Fuscheria";0,08;0,1;"https://www.nies.go.jp";"Fuscheria terricola";NA;NA
+8002457;"GENUS";"Bresslauides";0,105;0,175;"https://www.nies.go.jp";"";NA;NA
+1002070;"SPECIES";"Trichocerca rattus";0,23;0,23;"https://www.nies.go.jp";"";NA;NA
+1002835;"SPECIES";"Notholca acuminata";0,135;0,3;"https://www.nies.go.jp";"";NA;NA
+7385619;"SPECIES";"Blepharisma hyalinum";0,08;0,16;"https://www.nies.go.jp/chiiki1/protoz/morpho/ciliopho/blephari.htm#Blepharisma%20hyalinum";"";NA;NA
+1000794;"SPECIES";"Adineta vaga";0,2;0,7;"https://www.nies.go.jp/chiiki1/protoz/morpho/rotifera/r-adinet.htm#Adineta%20vaga";"";NA;NA
+8294946;"SPECIES";"Homalogastra setosa";0,015;0,03;"https://www.nies.go.jp; Ciliés libres de l'Afrique intertropicale: introduction à la connaissance …";"";NA;NA
+1269085;"SPECIES";"Aphidius ervi";NA;NA;"https://www6.inra.fr/encyclopedie-pucerons";"hyperparasite";NA;NA
+2077503;"SPECIES";"Acyrthosiphon pisum";2,3;4,4;"https://www6.inra.fr/encyclopedie-pucerons/";"";NA;NA
+2076745;"SPECIES";"Aulacorthum solani";1,8;3;"https://www6.inra.fr/encyclopedie-pucerons/Especes/Pucerons/Aulacorthum/A.-solani";"";NA;NA
+4281960;"GENUS";"Romanomermis sichuanensis";NA;NA;"https://www6.inra.fr/encyclopedie-pucerons/Especes/Pucerons/Rhopalosiphum/R.-padi";"parasitic";NA;NA
+2130185;"SPECIES";"Tetranychus urticae";0,3;0,5;"https://www7.inra.fr/hyppz/RAVAGEUR/3teturt.htm";"";NA;NA
+1446543;"GENUS";"Tipula";3;4;"https://www7.inra.fr/hyppz/RAVAGEUR/6tippal.htm";"larvae";NA;NA
+4308843;"SPECIES";"Agriotes sordidus";8;10,5;"Leseigneur (1972) faune de France";"";NA;NA
+7477764;"SPECIES";"Hemiamphisiella terricola";0,17;0,24;"Monograph of the Amphisiellidae and Trachelostylidae (Ciliophora, Hypotricha)";"";NA;NA
+8165311;"SPECIES";"Gonostomum namibiense";0,08;0,11;"Monograph of the Gonostomatidae and Kahliellidae (Ciliophora, Hypotricha)";"";NA;NA
+8212596;"SPECIES";"Gonostomum strenuum";0,08;0,11;"Monograph of the Gonostomatidae and Kahliellidae (Ciliophora, Hypotricha)";"";NA;NA
+8423927;"SPECIES";"Epispathidium terricola";0,09;0,09;"Monograph of the Spathidiida (Ciliophora, Haptoria):";"";NA;NA
+8387843;"GENUS";"Epispathidium";0,06;0,4;"Monograph of the Spathidiida (Ciliophora, Haptoria):";"";NA;NA
+8246938;"SPECIES";"Cultellothrix coemeterii";0,095;0,095;"Monograph of the Spathidiida (Ciliophora, Haptoria): ";"";NA;NA
+8084084;"SPECIES";"Cultellothrix lionotiformis";0,14;0,2;"Monograph of the Spathidiida (Ciliophora, Haptoria): ";"";NA;NA
+8090887;"SPECIES";"Anteholosticha monilata";0,09;0,16;"Monograph of the Urostyloidea (Ciliophora, Hypotricha)";"";NA;NA
+7680285;"SPECIES";"Urostyla grandis";0,2;0,27;"Monograph of the Urostyloidea (Ciliophora, Hypotricha)";"";NA;NA
+4556103;"SPECIES";"Tylenchus arcuatus";0,403;0,403;"Mulder Ecology";"";NA;NA
+8267652;"SPECIES";"Paratylenchus microdorus";0,405;0,405;"Mulder Ecology";"";NA;NA
+2283983;"SPECIES";"Meloidogyne naasi";0,238;0,501;"Mulder Ecology";"";NA;NA
+5777105;"SPECIES";"Paratylenchus neoamblicephalus";0,181;0,543;"Mulder Ecology";"";NA;NA
+5777119;"SPECIES";"Paratylenchus similis";0,181;0,543;"Mulder Ecology";"";NA;NA
+2284356;"GENUS";"Seinura";0,329;0,607;"Mulder Ecology";"";NA;NA
+2283040;"GENUS";"Teratocephalus";0,176;0,755;"Mulder Ecology";"";NA;NA
+2283952;"GENUS";"Ditylenchus";0,21;0,756;"Mulder Ecology";"";NA;NA
+2283775;"SPECIES";"Eucephalobus striatus";0,252;0,844;"Mulder Ecology";"";NA;NA
+2281441;"SPECIES";"Prismatolaimus dolichurus";0,781;0,882;"Mulder Ecology";"";NA;NA
+2282663;"GENUS";"Tylencholaimus";0,254;0,886;"Mulder Ecology";"";NA;NA
+2283711;"GENUS";"Panagrolaimus";0,126;0,945;"Mulder Ecology";"";NA;NA
+4556520;"SPECIES";"Helicotylenchus varicaudatus";0,176;1,178;"Mulder Ecology";"";NA;NA
+2282603;"GENUS";"Prodorylaimus";0,504;1,323;"Mulder Ecology";"";NA;NA
+4281844;"GENUS";"Rotylenchulus";0,24;1,401;"Mulder Ecology";"";NA;NA
+2283075;"GENUS";"Plectus";0,136;1,945;"Mulder Ecology";"";NA;NA
+2282644;"GENUS";"Mesodorylaimus nigritulus";0,809;2,055;"Mulder Ecology";"";NA;NA
+2282615;"GENUS";"Discolaimus";2,183;2,183;"Mulder Ecology";"";NA;NA
+4554365;"SPECIES";"Longidorus raskii";0,611;4,498;"Mulder Ecology";"";NA;NA
+4554383;"SPECIES";"Longidorus vinearum";0,611;4,498;"Mulder Ecology";"";NA;NA
+4554435;"SPECIES";"Xiphinema diversicaudatum";4,062;4,523;"Mulder Ecology";"";NA;NA
+4555966;"SPECIES";"Boleodorus volutus";0,36;0,36;"Mulder Ecology ";"";NA;NA
+2282769;"SPECIES";"Amphidelus pusillus";0,428;0,626;"Mulder Ecology ";"";NA;NA
+2283761;"GENUS";"Acrobeles";0,173;0,7;"Mulder Ecology ";"";NA;NA
+2283740;"SPECIES";"Cephalobus persegnis";0,536;0,733;"Mulder Ecology ";"";NA;NA
+2283337;"SPECIES";"Bastiania gracilis";0,239;1,066;"Mulder Ecology ";"";NA;NA
+2284354;"GENUS";"Aphelenchoides";0,115;1,179;"Mulder Ecology ";"";NA;NA
+4556265;"SPECIES";"Amplimerlinius icarus";1,325;1,879;"Mulder Ecology ";"";NA;NA
+2282578;"SPECIES";"Anatonchus tridentatus";2,167;2,999;"Mulder Ecology ";"";NA;NA
+2282747;"GENUS";"Aporcelaimellus";0,244;3,435;"Mulder Ecology ";"";NA;NA
+7834375;"GENUS";"Amphileptus";NA;NA;"not found";"";NA;NA
+8167254;"GENUS";"Anteholosticha rectangula";NA;NA;"not found";"";NA;NA
+7595878;"SPECIES";"Arcuospathidium namibiense";NA;NA;"not found";"";NA;NA
+7618777;"SPECIES";"Bardeliella pulchra";NA;NA;"not found";"";NA;NA
+7381412;"SPECIES";"Bicosoeca petiolata";NA;NA;"not found";"";NA;NA
+4663886;"GENUS";"Blaberolaelaps";NA;NA;"not found";"";NA;NA
+4898692;"GENUS";"Bodomorpha";NA;NA;"not found";"";NA;NA
+1489006;"SPECIES";"Bradysia subrufescens";NA;NA;"not found";"";NA;NA
+3201179;"GENUS";"Chlorellidium tetrabotrys";NA;NA;"not found";"";NA;NA
+3195018;"SPECIES";"Epipyxis pulchra";NA;NA;"not found";"";NA;NA
+NA;"";"Heterococcus caespitosus";NA;NA;"not found";"";NA;NA
+3202687;"SPECIES";"Hyphochytrium catenoides";NA;NA;"not found";"";NA;NA
+8041250;"SPECIES";"Lacrymaria marina";NA;NA;"not found";"";NA;NA
+1611430;"SPECIES";"Lonchoptera lutea";NA;NA;"not found";"";NA;NA
+7518643;"SPECIES";"Maryna ovata";NA;NA;"not found";"";NA;NA
+8312129;"GENUS";"Mayamaea";NA;NA;"not found";"";NA;NA
+4556202;"SPECIES";"Merlinius microdorus";0,58;0,7;"NemaTrait (Trap)";"";NA;NA
+4556197;"SPECIES";"Merlinius joctus";0,52;0,71;"not found";"";NA;NA
+7787296;"SPECIES";"Meseres corlissi";NA;NA;"not found";"";NA;NA
+2283674;"GENUS";"Mesorhabditis";0,46;0,7;"not found";"";NA;NA
+3201190;"GENUS";"Mischococcus sphaerocephalus";NA;NA;"not found";"";NA;NA
+7571206;"SPECIES";"Monilicaryon monilatum";NA;NA;"not found";"";NA;NA
+NA;"";"Monocystis agilis";NA;NA;"not found";"";NA;NA
+8360084;"SPECIES";"Mykophagophrys terricola";NA;NA;"not found";"";NA;NA
+1789695;"SPECIES";"Noctua pronuba";NA;NA;"not found";"";NA;NA
+7457456;"SPECIES";"Obertrumia georgiana";NA;NA;"not found";"";NA;NA
+3194509;"GENUS";"Oikomonas";NA;NA;"not found";"";NA;NA
+8951948;"SPECIES";"Orciraptor agilis";NA;NA;"not found";"";NA;NA
+7990941;"GENUS";"Pentapharsodinium tyrrhenicum";NA;NA;"not found";"";NA;NA
+4520829;"SPECIES";"Peyerimhoffia alpina";NA;NA;"not found";"";NA;NA
+7779390;"SPECIES";"Phialina salinarum";NA;NA;"not found";"";NA;NA
+8072867;"SPECIES";"Platyophrya vorax";NA;NA;"not found";"";NA;NA
+9530095;"GENUS";"Platyreta germanica";NA;NA;"not found";"";NA;NA
+3201319;"GENUS";"Pleurochloris meiringensis";NA;NA;"not found";"";NA;NA
+4899951;"GENUS";"Poterioochromonas malhamensis";NA;NA;"not found";"";NA;NA
+4899951;"GENUS";"Poterioochromonas stipitata";NA;NA;"not found";"";NA;NA
+NA;"";"Protaspis obliqua";NA;NA;"not found";"";NA;NA
+7468873;"SPECIES";"Pseudocyrtolophosis alpestris";NA;NA;"not found";"";NA;NA
+2628789;"SPECIES";"Pseudo-nitzschia heimii";NA;NA;"not found";"";NA;NA
+7365025;"GENUS";"Pseudouroleptus";NA;NA;"not found";"";NA;NA
+7668387;"SPECIES";"Pseudovorticella punctata";NA;NA;"not found";"";NA;NA
+7396624;"GENUS";"Pseudovorticella";NA;NA;"not found";"";NA;NA
+7766976;"SPECIES";"Spathidium simplinucleatum";NA;NA;"not found";"";NA;NA
+4653827;"GENUS";"Stigmalychus";NA;NA;"not found";"";NA;NA
+4549547;"SPECIES";"Uropoda orbicularis";NA;NA;"not found";"";NA;NA
+8299209;"SPECIES";"Vaucheria terrestris";NA;NA;"not found";"";NA;NA
+2191143;"SPECIES";"Protoribates hakonensis";0,34;0,43;"Oribatid mites (Acari: Oribatida) from the coastal region of Portugal. VI. Chamobates, Protozetomimus, Protoribates, Oribatula.";"";NA;NA
+1063891;"SPECIES";"Amphimallon solstitiale";14;20;"Paulian (1941) Faune de France";"";NA;NA
+7957501;"SPECIES";"Dileptus microstoma";0,17;0,17;"Peter V?a?ný & Wilhelm Foissner Monograph of the Dileptids (Protista, Ciliophora, Rhynchostomatia) ";"";NA;NA
+7410447;"GENUS";"Dileptus";0,116;1,2;"Peter V?a?ný & Wilhelm Foissner Monograph of the Dileptids (Protista, Ciliophora, Rhynchostomatia) ";"";NA;NA
+9619850;"GENUS";"Isolaimium";3;6;"PMID: 19325662";"";NA;NA
+3210222;"GENUS";"Cercomonas";5;12;"Protistology 3 (4), 201 217 (2004) Review of diversity and taxonomy of cercomonads Alexander P. Myl’nikov  and Serguei A. Karpov ";"";NA;NA
+3194398;"GENUS";"Hibberdia magna";0,06;0,06;"The Freshwater Algal Flora of the British Isles: An Identification";"";NA;NA
+2181976;"SPECIES";"Histiostoma feroniarum";0,3;0,3;"The Handbook of Mites of Economic Plants";"";NA;NA
+2188311;"GENUS";"Liochthonius sp. AD1300";0,174;0,198;"The Soil Mites of the World: Vol. 1: Primitive Oribatids of the Palaearctic";"European species";NA;NA
+4555937;"SPECIES";"Neopsilenchus magnidens";0,66;0,99;"The Tylenchidae of the World: Identification of the Family Tylenchidae ";"";NA;NA
+5167040;"SPECIES";"Tullbergia yosii";NA;NA;"to be discarded";"Japan species";NA;NA
+2121983;"GENUS";"Crossodonthina koreana";NA;NA;"to be discarded";"";NA;NA
+4410245;"SPECIES";"Eudrilus eugeniae";NA;NA;"to be discarded";"";NA;NA
+2120985;"GENUS";"Seira barnardi";NA;NA;"to be discarded";"";NA;NA
+8891999;"SPECIES";"Friesea grisea";NA;NA;"to be discarded";"";NA;NA
+1032756;"GENUS";"Gliricola";NA;NA;"to be discarded";"vertebrate parasite";NA;NA
+8198844;"GENUS";"Leptopharynx bromelicola";NA;NA;"to be discarded";"from tank bromeliads of Jamaica";NA;NA
+2193785;"GENUS";"Pilogalumna rosauraruizae";NA;NA;"to be discarded since recently described from Mexico";"";NA;NA
+1318887;"SPECIES";"Myrmica scabrinodis";4;5;"www.antwiki.org";"";NA;NA
+7351754;"GENUS";"Vorticella";0,15;1;"";"";NA;NA
+2284396;"SPECIES";"Aphelenchus avenae";0,472;1,194;"";"";NA;NA
+2308289;"SPECIES";"Marionina sublitoralis";2;2;"";"";NA;NA
+2069580;"SPECIES";"Rhopalosiphum padi";1,2;2,4;"";"";NA;NA
+2076179;"SPECIES";"Myzus persicae";1,96;2,48;"";"";NA;NA
+2308261;"SPECIES";"Enchytronia parva";0;3;"";"";NA;NA
+4409889;"SPECIES";"Marionina minutissima";0;3;"";"";NA;NA
+4409812;"SPECIES";"Enchytraeus norvegicus";3;3;"";"";NA;NA
+7630327;"SPECIES";"Fridericia isseli";4;4;"";"";NA;NA
+4445230;"SPECIES";"Choleva angustata";3;4;"";"";NA;NA
+4438583;"SPECIES";"Tachyporus hypnorum";3;4;"";"";NA;NA
+4409817;"SPECIES";"Enchytraeus bulbosus";4;4;"";"";NA;NA
+4307714;"SPECIES";"Enchytraeus christenseni";3;5;"";"";NA;NA
+2308295;"SPECIES";"Marionina communis";3;5;"";"";NA;NA
+2119537;"SPECIES";"Campodea fragilis";3;5;"";"";NA;NA
+4409880;"SPECIES";"Marionina filiformis";4;5;"";"";NA;NA
+1181282;"SPECIES";"Sitona lineatus";4;5;"";"";NA;NA
+4424949;"SPECIES";"Aphodius johnsoni";4,5;6;"";"";NA;NA
+4409891;"SPECIES";"Marionina clavata";4;7;"";"";NA;NA
+8265293;"SPECIES";"Achaeta affinis";5;8;"";"";NA;NA
+4409927;"SPECIES";"Achaeta bohemica";8;8;"";"";NA;NA
+2308382;"SPECIES";"Henlea perpusilla";4;9;"";"";NA;NA
+2308272;"SPECIES";"Enchytraeus buchholzi";5;9;"";"";NA;NA
+2308267;"SPECIES";"Enchytraeus lacteus";7;9;"";"";NA;NA
+8391327;"SPECIES";"Achaeta bifollicula";8;10;"";"";NA;NA
+8750602;"SPECIES";"Achaeta unibulba";8;10;"";"";NA;NA
+8876572;"SPECIES";"Fridericia tuberosa";10;11;"";"";NA;NA
+2308365;"SPECIES";"Fridericia paroniana";6;12;"";"";NA;NA
+9053167;"SPECIES";"Fridericia sylvatica";6;12;"";"";NA;NA
+5739693;"SPECIES";"Buchholzia fallax";7;12;"";"";NA;NA
+7369804;"SPECIES";"Fridericia christeri";8;12;"";"";NA;NA
+7441738;"SPECIES";"Fridericia sohlenii";10;13;"";"";NA;NA
+4812533;"SPECIES";"Fridericia bisetosa";10;18;"";"";NA;NA
+9430745;"SPECIES";"Chamaedrilus glandulosus";0;25;"";"";NA;NA
+8922158;"SPECIES";"Chamaedrilus sphagnetorum";0;25;"";"";NA;NA
+8142015;"SPECIES";"Fridericia connata";14;25;"";"";NA;NA
+4812535;"SPECIES";"Fridericia galba";15;25;"";"";NA;NA
+2308359;"SPECIES";"Fridericia ratzeli";15;30;"";"";NA;NA
+2308269;"SPECIES";"Enchytraeus albidus";20;30;"";"";NA;NA
+7618454;"SPECIES";"Fridericia magna";30;50;"";"";NA;NA

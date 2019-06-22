@@ -1,0 +1,1028 @@
+"";"keys";"names";"trophic_group"
+"1";"1000794";"Adineta vaga";16
+"2";"1002070";"Trichocerca rattus";16
+"3";"1002835";"Notholca acuminata";16
+"4";"1013578";"Cylindroiulus caeruleocinctus";4
+"5";"1020585";"Polydesmus coriaceus";4
+"6";"102522790";"uncultured Acidobacterium UA3";15
+"7";"102558290";"Nitrospira";15
+"8";"102565918";"Nakamurella";15
+"9";"102710354";"Nannocystis";15
+"10";"102979699";"Nannochloris";4
+"11";"103079544";"Echinamoeba exundans";16
+"12";"1032756";"Gliricola";4
+"13";"103498073";"Vermamoeba vermiformis";16
+"14";"1037288";"Trechus";8
+"15";"1037319";"Trechus obtusus";4
+"16";"103997429";"Candidatus Solibacter usitatus";15
+"17";"104001606";"Candidatus Solibacter";15
+"18";"1042814";"Rhizophagus";4
+"19";"104340218";"Pedosphaera";15
+"20";"104372713";"Chthoniobacter flavus";15
+"21";"1063891";"Amphimallon solstitiale";4
+"22";"1162125";"Agriotes";4
+"23";"1181282";"Sitona lineatus";4
+"24";"1195102";"Otiorhynchus armadillo";4
+"25";"119788004";"Candidatus Nitrosocosmicus";15
+"26";"1198632";"Barynotus moerens";4
+"27";"1198651";"Barynotus obscurus";4
+"28";"120786288";"Acidiferrobacteraceae";15
+"29";"126037304";"Isosphaeraceae";15
+"30";"126043370";"Microthrixaceae";15
+"31";"1269085";"Aphidius ervi";4
+"32";"128048854";"Leptophryidae";12
+"33";"1318887";"Myrmica scabrinodis";4
+"34";"1419844";"Forficula";14
+"35";"1419845";"Forficula auricularia";4
+"36";"1489006";"Bradysia subrufescens";5
+"37";"1504935";"Tipula cockerelliana";4
+"38";"1505603";"Tipula abdominalis";4
+"39";"1611430";"Lonchoptera lutea";5
+"40";"1789695";"Noctua pronuba";4
+"41";"1948";"Eustigmataceae";4
+"42";"2049366";"Pemphigus";4
+"43";"2049562";"Aphis";4
+"44";"2069580";"Rhopalosiphum padi";4
+"45";"2071998";"Rhodobium";4
+"46";"2076179";"Myzus persicae";7
+"47";"2076745";"Aulacorthum solani";7
+"48";"2077503";"Acyrthosiphon pisum";4
+"49";"2119156";"Eosentomon";5
+"50";"2119498";"Campodea";4
+"51";"2119537";"Campodea fragilis";4
+"52";"2119703";"Tetracanthella";4
+"53";"2120343";"Isotomiella minor";4
+"54";"2120372";"Folsomia quadrioculata";4
+"55";"2120383";"Folsomia candida";4
+"56";"2120412";"Entomobrya";4
+"57";"2120510";"Protaphorura armata";4
+"58";"2120580";"Sminthurides aquaticus";4
+"59";"2120754";"Entomobrya multifasciata";4
+"60";"2120836";"Willowsia nigromaculata";4
+"61";"2120880";"Lepidocyrtus";4
+"62";"2120899";"Lepidocyrtus paradoxus";4
+"63";"2120979";"Orchesella villosa";4
+"64";"2120985C1";"Seira barnardi";4
+"65";"2121254";"Ceratophysella";4
+"66";"2121983C1";"Crossodonthina koreana";4
+"67";"2122146";"Podura aquatica";4
+"68";"2122150";"Megalothorax";4
+"69";"2124312";"Chthonius";4
+"70";"2128073";"Alicorhagia";12
+"71";"2130185";"Tetranychus urticae";4
+"72";"2131873";"Anystis";4
+"73";"2155886";"Robertus neglectus";4
+"74";"2164";"Cercomonadidae";6
+"75";"2171";"Hartmannellidae";6
+"76";"2181931";"Tyrophagus";5
+"77";"2181947";"Rhizoglyphus";4
+"78";"2181976";"Histiostoma feroniarum";5
+"79";"2188311";"Liochthonius";4
+"80";"2191143";"Protoribates hakonensis";4
+"81";"2193269";"Tectocepheus";4
+"82";"2193785C1";"Pilogalumna rosauraruizae";4
+"83";"2230246";"Lithobius forficatus";4
+"84";"2230514";"Lithobius variegatus";4
+"85";"2279676";"Rhabditis";6
+"86";"2279885";"Prismatolaimus";6
+"87";"2280384";"Prodesmodora circulata";16
+"88";"2281434";"Odontolaimus";11
+"89";"2281441";"Prismatolaimus cf. dolichurus JH-2004";16
+"90";"2281488";"Tripyla";13
+"91";"2282578";"Anatonchus tridentatus";16
+"92";"2282603";"Prodorylaimus";1
+"93";"2282607";"Pungentus";1
+"94";"2282616";"Discolaimus cf. major HHBM-2007a";16
+"95";"2282644C1";"Mesodorylaimus cf. nigritulus AV-2005";16
+"96";"2282663";"Tylencholaimus";5
+"97";"2282727";"Longidorus";7
+"98";"2282732";"Xiphinema";7
+"99";"2282747";"Aporcelaimellus";1
+"100";"2282769";"Amphidelus cf. pusillus 9 Mile 3-17 LP-02";16
+"101";"2282770";"Alaimus";6
+"102";"2282796";"Funaria";16
+"103";"2283045";"Teratocephalus terrestris";16
+"104";"2283075";"Plectus";6
+"105";"2283127";"Rhabdolaimus";6
+"106";"2283334";"Bastiania";6
+"107";"2283337";"Bastiania gracilis";16
+"108";"2283346";"Clarkus";13
+"109";"2283674";"Mesorhabditis";6
+"110";"2283711";"Panagrolaimus";6
+"111";"2283740";"Cephalobus persegnis";16
+"112";"2283754";"Acrobeloides";6
+"113";"2283761";"Acrobeles";6
+"114";"2283775";"Eucephalobus striatus";16
+"115";"2283953";"Ditylenchus dipsaci";16
+"116";"2283969";"Heterodera";7
+"117";"2283983";"Meloidogyne naasi";16
+"118";"2284094";"Helicotylenchus";7
+"119";"2284116C1";"Rotylenchus vitis";16
+"120";"2284120";"Pratylenchus";7
+"121";"2284354";"Aphelenchoides";5
+"122";"2284394";"Aphelenchus";5
+"123";"2284396";"Aphelenchus avenae";16
+"124";"2307755";"Aporrectodea";4
+"125";"2307757";"Aporrectodea longa";4
+"126";"2307759";"Aporrectodea caliginosa";4
+"127";"2307760";"Aporrectodea rosea";4
+"128";"2307763";"Octolasion";4
+"129";"2307766";"Octolasion cyaneum";4
+"130";"2308261";"Enchytronia parva";16
+"131";"2308266";"Enchytraeus";16
+"132";"2308267";"Enchytraeus lacteus";16
+"133";"2308269";"Enchytraeus albidus";16
+"134";"2308272";"Enchytraeus buchholzi";16
+"135";"2308278";"Marionina";16
+"136";"2308289";"Marionina sublitoralis";16
+"137";"2308295";"Marionina communis";16
+"138";"2308359";"Fridericia ratzeli";16
+"139";"2308365";"Fridericia paroniana";16
+"140";"2308382";"Henlea perpusilla";16
+"141";"2308383";"Achaeta";16
+"142";"2389";"Convolvulaceae";9
+"143";"2416";"Polygonaceae";9
+"144";"2420";"Plantaginaceae";9
+"145";"2422";"Papaveraceae";9
+"146";"2499";"Juglandaceae";9
+"147";"2512861";"Guepiniopsis buccina";2
+"148";"2513009";"Orbilia";2
+"149";"2513144";"Protomyces";2
+"150";"2513576";"Entyloma ficariae";2
+"151";"2518091";"Malassezia";2
+"152";"2518102";"Malassezia globosa";2
+"153";"2518117";"Itersonilia perplexans";2
+"154";"2518120";"Bullera";2
+"155";"2518166";"Sporobolomyces";2
+"156";"2518208";"Cladosporium";7
+"157";"2518442";"Dioszegia";2
+"158";"2518830";"Hyphodontia rimosissima";2
+"159";"2523138";"Trechispora farinacea";2
+"160";"2523318";"Hygrocybe";2
+"161";"2523664";"Peniophorella praetermissa";2
+"162";"2524401";"Panaeolus";2
+"163";"2525705";"Camarophyllus";2
+"164";"2525706";"Hygrophorus";2
+"165";"2526774";"Psathyrella";2
+"166";"2527766";"Tricholoma";2
+"167";"2531688";"Porpoloma";2
+"168";"2534205";"Pholiota squarrosa";2
+"169";"2538727";"Hygrophorus agathosmus";2
+"170";"2538825";"Chromosera";2
+"171";"2540225";"Ramariopsis kunzei";2
+"172";"2540688";"Pterula echo";2
+"173";"2552607";"Scytinostroma";2
+"174";"2552703";"Asterostroma andinum";2
+"175";"2553";"Anguinidae";16
+"176";"2554333";"Geastrum saccatum";2
+"177";"2555201";"Rhizoctonia solani";2
+"178";"2555295";"Multiclavula mucida";2
+"179";"2555644";"Limonomyces roseipellis";2
+"180";"2555962";"Cystobasidium";8
+"181";"2557854";"Proceropycnis pinicola";2
+"182";"2558164";"Basidiobolus";2
+"183";"2558209";"Gongronella";2
+"184";"2558212";"Gongronella butleri";2
+"185";"2558227";"Halteromyces radiatus";2
+"186";"2558228";"Mortierella";2
+"187";"2559052";"Piptocephalis graefenhanii";2
+"188";"2559068";"Kuzuhaea moniliformis";2
+"189";"2559079";"Syncephalis depressa";2
+"190";"2559082";"Syncephalis fuscata";2
+"191";"2559238";"Cochlonema euryblastum";2
+"192";"2559270";"Endogone";2
+"193";"2559290";"Dissophora decumbens";2
+"194";"2559441";"Endogone lactiflua";2
+"195";"2559545";"Glomus";2
+"196";"2559630";"Conidiobolus lamprauges";2
+"197";"2559645";"Conidiobolus firmipilleus";2
+"198";"2559647";"Conidiobolus coronatus";2
+"199";"2560";"Cephalobidae";16
+"200";"2560113";"Acaulospora laevis";2
+"201";"2560208";"Diversispora";2
+"202";"2560211";"Archaeospora";2
+"203";"2560212";"Archaeospora trappei";2
+"204";"2560216";"Ambispora gerdemannii";2
+"205";"2560223";"Ambispora fennica";2
+"206";"2560238";"Paraglomus";2
+"207";"2560239";"Paraglomus brasilianum";2
+"208";"2560584";"Beauveria";8
+"209";"2560689";"Cordyceps memorabilis";2
+"210";"2561637";"Stilbocrea macrostoma";2
+"211";"2562464";"Metarhizium";8
+"212";"2562645";"Metarhizium anisopliae";2
+"213";"2564469";"Panorbis viscosus";2
+"214";"2566393";"Cryphonectria parasitica";2
+"215";"2569257";"Magnaporthe";2
+"216";"2569641";"Ascobolus";2
+"217";"2579070";"Phaeosphaeria";2
+"218";"2582306";"Hymenoscyphus repandus";2
+"219";"2584306";"Bisporella citrina";2
+"220";"2584528";"Streptomyces";15
+"221";"2584918";"Hyphodiscus hymeniophilus";2
+"222";"2586813";"Hyalorbilia";2
+"223";"2587454";"Brachyphoris oviparasitica";2
+"224";"2587614";"Prototheca";4
+"225";"2588";"Nygolaimidae";16
+"226";"2588233";"Pyrenochaeta";2
+"227";"2592";"Dorylaimidae";16
+"228";"2592471";"Dictyosporium";2
+"229";"2593015";"Synchytrium";2
+"230";"2593986";"Melastiza contorta";2
+"231";"2594455";"Cheilymenia stercorea";2
+"232";"2595140";"Iodophanus carneus";2
+"233";"2595488";"Saccobolus dilutellus";2
+"234";"2595518";"Thecotheus holmskjoldii";2
+"235";"2595607";"Ascobolus stercorarius";2
+"236";"2595861";"Auxarthron";2
+"237";"2596";"Alaimidae";16
+"238";"2598197";"Talaromyces";2
+"239";"2599166";"Saccharomyces cerevisiae";2
+"240";"2599451";"Yarrowia";2
+"241";"2599452";"Yarrowia lipolytica";2
+"242";"2607";"Plectidae";16
+"243";"2613773";"Tubeufia helicomyces";2
+"244";"2615417";"Periconia macrospinosa";2
+"245";"2626861";"Catenaria";2
+"246";"2626969";"Olpidium brassicae";2
+"247";"2626979";"Olpidium bornovanus";2
+"248";"2627132";"Rhizophydium";2
+"249";"2627185";"Endochytrium";2
+"250";"2627401";"Spizellomyces";2
+"251";"2627404";"Spizellomyces punctatus";2
+"252";"2627419";"Rhizophlyctis rosea";2
+"253";"2627459";"Rhizophydium planktonicum";2
+"254";"2627487";"Rhizophydium patellarium";2
+"255";"2628185";"Nitzschia";4
+"256";"2628789";"Pseudo-nitzschia heimii";4
+"257";"2638467";"Chlorella";4
+"258";"2638548C1";"Coelastrella saipanensis";4
+"259";"2639576";"Palmellopsis";3
+"260";"2639987C1";"Jaagiella alpicola";4
+"261";"2641076";"Micractinium";4
+"262";"2642049";"Bracteacoccus";4
+"263";"2642071";"Coccomyxa";3
+"264";"2642884";"Caulerpa cupressoides";4
+"265";"2652440";"Desmodesmus";4
+"266";"2684241";"Pinus";9
+"267";"2684876";"Abies";9
+"268";"2684902";"Taxus";9
+"269";"2701072";"Juncus";9
+"270";"2705180";"Sorghum";9
+"271";"2705308";"Dactylis glomerata";9
+"272";"2706162";"Holcus";9
+"273";"2832";"Laelapidae";4
+"274";"2873855";"Linum";9
+"275";"2876099";"Alnus";9
+"276";"2882482";"Calluna vulgaris";9
+"277";"2888863";"Rheum";9
+"278";"2888942";"Rumex";9
+"279";"2889077";"Polygonum";9
+"280";"2927028";"Salvia nemorosa";9
+"281";"2928226";"Phacelia tanacetifolia";9
+"282";"2940361";"Pisum";9
+"283";"2973363";"Trifolium";9
+"284";"2982508";"Vigna angularis";9
+"285";"3033294";"Ranunculus";9
+"286";"3042";"Aphididae";4
+"287";"3045622";"Cardamine";9
+"288";"3047621";"Sinapis alba";9
+"289";"3065";"Asteraceae";9
+"290";"3073";"Poaceae";9
+"291";"3085444";"Cerastium arcticum";9
+"292";"3085667";"Stellaria";9
+"293";"3112";"Brassicaceae";9
+"294";"3172047";"Veronica";9
+"295";"3194322";"Sphaeroeca volvox";16
+"296";"3194385C1";"Chlamydomyxa labyrinthuloides";3
+"297";"3194398C1";"Hibberdia magna";4
+"298";"3194422";"Thaumatomastix";16
+"299";"3194509";"Oikomonas";3
+"300";"3194566";"Spumella";3
+"301";"3194566C1";"Spumella lacusvadosi";3
+"302";"3194568";"Spumella vulgaris";3
+"303";"3194946";"Dinobryon";4
+"304";"3195018";"Epipyxis pulchra";3
+"305";"3195066";"Mallomonas";3
+"306";"3195227";"Paraphysomonas";3
+"307";"3200877";"Tribonema";4
+"308";"3200900";"Xanthonema";4
+"309";"3200900C1";"Xanthonema bristolianum";4
+"310";"3200939C1";"Heterococcus caespitosus";4
+"311";"3201016C1";"Pseudopleurochloris antarctica";4
+"312";"3201168";"Botryochloris";4
+"313";"3201179";"Chlorellidium";4
+"314";"3201179C1";"Chlorellidium tetrabotrys";4
+"315";"3201190C1";"Mischococcus sphaerocephalus";4
+"316";"3201319C1";"Pleurochloris meiringensis";4
+"317";"3201444";"Bumilleriopsis";4
+"318";"3202401C1";"Siluania monomastiga";16
+"319";"3202687";"Hyphochytrium catenoides";16
+"320";"3202728";"Pythium";7
+"321";"3202934";"Aphanomyces";16
+"322";"3204289";"Polymyxa graminis";16
+"323";"3204342";"Spongospora";16
+"324";"3208283";"Trypanosoma";3
+"325";"3210222";"Cercomonas";16
+"326";"3210222C1";"Cercomonas alexieffi";16
+"327";"3210222C10";"Cercomonas vacuolata";16
+"328";"3210222C2";"Cercomonas braziliensis";16
+"329";"3210222C3";"Cercomonas celer";16
+"330";"3210222C4";"Cercomonas fastiga";16
+"331";"3210222C5";"Cercomonas media";16
+"332";"3210222C6";"Cercomonas parambigua";16
+"333";"3210222C7";"Cercomonas parincurva";16
+"334";"3210222C8";"Cercomonas radiata";16
+"335";"3210222C9";"Cercomonas rapida";16
+"336";"3210423";"Saccamoeba";16
+"337";"3212286";"Nuclearia";10
+"338";"3212288";"Euglypha";16
+"339";"3212296";"Paulinella";16
+"340";"3212657";"Lamproderma";16
+"341";"3219826";"Derxia";15
+"342";"3219853";"Massilia";15
+"343";"3219861";"Duganella";15
+"344";"3219864";"Herbaspirillum";15
+"345";"3219877";"Herminiimonas";15
+"346";"3219881";"Pseudomonas";15
+"347";"3219885";"Janthinobacterium";15
+"348";"3219897";"Ralstonia";15
+"349";"3219898";"Ralstonia solanacearum";15
+"350";"3219909";"Paucimonas lemoignei";15
+"351";"3219916";"Burkholderia";15
+"352";"3219940";"Burkholderia cepacia";15
+"353";"3220005";"Cupriavidus";15
+"354";"3220012";"Xanthomonas";15
+"355";"3220030";"Rhodopseudomonas";15
+"356";"3220051";"Pelomonas";15
+"357";"3220072";"Rhodoferax";15
+"358";"3220095";"Polaromonas";15
+"359";"3220112";"Curvibacter";15
+"360";"3220118";"Comamonas";15
+"361";"3220129";"Delftia";15
+"362";"3220140";"Acidovorax";15
+"363";"3220160";"Hydrogenophaga";15
+"364";"3220176";"Diaphorobacter";15
+"365";"3220178";"Variovorax";15
+"366";"3220297";"Propionivibrio";15
+"367";"3220302";"Dechloromonas";15
+"368";"3220311";"Sterolibacterium";15
+"369";"3220316";"Denitratisoma";15
+"370";"3220318";"Ferribacterium";15
+"371";"3220331";"Methylophilus";15
+"372";"3220334";"Methylobacillus";15
+"373";"3220358";"Nitrosospira";15
+"374";"3220375";"Desulfovibrio";15
+"375";"3220384";"Syntrophobacter";15
+"376";"3220389";"Desulfovirga";15
+"377";"3220393";"Syntrophus";15
+"378";"3220490";"Desulfuromonas";15
+"379";"3220502";"Malonomonas";15
+"380";"3220504";"Pelobacter";15
+"381";"3220511";"Geothermobacter";15
+"382";"3220513";"Geobacter";15
+"383";"3220527";"Haliangium";15
+"384";"3220542";"Kofleria";15
+"385";"3220545";"Anaeromyxobacter";15
+"386";"3220549";"Cystobacter";15
+"387";"3220586";"Sorangium cellulosum";15
+"388";"3220588";"Chondromyces";15
+"389";"3220602";"Polyangium";15
+"390";"3220678";"Desulfotalea";15
+"391";"3220688";"Bdellovibrio";15
+"392";"3220694";"Bacteriovorax";15
+"393";"3220733";"Rhizobium";15
+"394";"3220801";"Mycoplana";15
+"395";"3220815";"Ochrobactrum anthropi";15
+"396";"3220820";"Methylobacterium";15
+"397";"3220848";"Microvirga";15
+"398";"3220866";"Methylocella";15
+"399";"3220879";"Methylocapsa";15
+"400";"3220883";"Blastochloris";15
+"401";"3220895";"Pedomicrobium";15
+"402";"3220906";"Hyphomicrobium";15
+"403";"3220920";"Rhodoplanes";15
+"404";"3220926";"Devosia";15
+"405";"3220934";"Rhodomicrobium";15
+"406";"3220944";"Prosthecomicrobium";15
+"407";"3220956";"Labrys";15
+"408";"3220964";"Nitratireductor";15
+"409";"3220966";"Mesorhizobium";15
+"410";"3220999";"Aminobacter";15
+"411";"3221031";"Bradyrhizobium";15
+"412";"3221069";"Methylosinus";15
+"413";"3221070";"Methylosinus trichosporium";15
+"414";"3221071";"Methylosinus sporium";15
+"415";"3221102";"Woodsholea";15
+"416";"3221268";"Caulobacter";15
+"417";"3221314";"Sphingosinicella";15
+"418";"3221318";"Erythrobacter";15
+"419";"3221328";"Flavobacterium";15
+"420";"3221329";"Sphingobium";15
+"421";"3221347";"Porphyrobacter";15
+"422";"3221354";"Sphingomonas";15
+"423";"3221548";"Acidisphaera";15
+"424";"3221582";"Stella";15
+"425";"3221615";"Rhodopila globiformis";15
+"426";"3221640";"Skermanella";15
+"427";"3221657";"Azospirillum";15
+"428";"3221686";"Phenylobacterium lituiforme";15
+"429";"3221696";"Caulobacter fusiformis";15
+"430";"3221698";"Brevundimonas";15
+"431";"3222287";"Dokdonella";15
+"432";"3222292";"Thermomonas";15
+"433";"3222300";"Lysobacter";15
+"434";"3222358";"Rhodanobacter";15
+"435";"3222362";"Hydrocarboniphaga";15
+"436";"3222364";"Dyella";15
+"437";"3222368";"Stenotrophomonas";15
+"438";"3222546";"Nitrosococcus";15
+"439";"3222596";"Thiorhodospira";15
+"440";"3222768";"Saccharophagus";15
+"441";"3222857";"Bacteroides";15
+"442";"3223030";"Rickettsiella";15
+"443";"3223036";"Legionella";15
+"444";"3223071";"Legionella lytica";15
+"445";"3223108";"Cellvibrio";15
+"446";"3223263";"Acinetobacter";15
+"447";"3223442";"Sphaerobacter";15
+"448";"3223545";"Conexibacter";15
+"449";"3223547";"Thermoleophilum";15
+"450";"3223550";"Arthrobacter";15
+"451";"3223551";"Solirubrobacter";15
+"452";"3223562";"Streptosporangium";15
+"453";"3224204";"Actinoplanes";15
+"454";"3224243C1";"Streptacidiphilus alcalitolerans";15
+"455";"3224260";"Sporichthya";15
+"456";"3224279";"Cellulomonas";15
+"457";"3224302";"Nocardioides";15
+"458";"3224324";"Marmoricola";15
+"459";"3224336";"Aeromicrobium";15
+"460";"3224344";"Kribbella";15
+"461";"3224359";"Catenulispora";15
+"462";"3224437";"Rhodococcus";15
+"463";"3224487";"Actinocatenispora";15
+"464";"3224489";"Catellatospora";15
+"465";"3224505";"Micromonospora";15
+"466";"3224595";"Dactylosporangium";15
+"467";"3224612";"Acidothermus";15
+"468";"3224724";"Geodermatophilus";15
+"469";"3224726";"Blastococcus";15
+"470";"3224755";"Kutzneria";15
+"471";"3224769";"Pseudonocardia";15
+"472";"3224882";"Amycolatopsis tolypomycina";15
+"473";"3225210";"Actinomadura";15
+"474";"3225218";"Lentzea";15
+"475";"3225251";"Rathayibacter";15
+"476";"3225265";"Agromyces";15
+"477";"3225307";"Salinibacterium";15
+"478";"3225314";"Leifsonia";15
+"479";"3225337";"Frigoribacterium";15
+"480";"3225355";"Clavibacter";15
+"481";"3225370";"Microbacterium";15
+"482";"3225488";"Nonomuraea";15
+"483";"3225653";"Frankia";15
+"484";"3225655";"Sanguibacter";15
+"485";"3225670";"Microlunatus";15
+"486";"3225798";"Kineococcus";15
+"487";"3225829";"Oryzihumus";15
+"488";"3225840";"Janibacter";15
+"489";"3225859";"Acidimicrobium";15
+"490";"3225870";"Fusobacterium";15
+"491";"3226206";"Clostridium";15
+"492";"3226216";"Thermaerobacter";15
+"493";"3226460";"Desulfitobacterium";15
+"494";"3226904";"Thermoanaerobacter";15
+"495";"3227472";"Thermoflavimicrobium";15
+"496";"3227538";"Paenibacillus";15
+"497";"3227637";"Bacillus";15
+"498";"3228067";"Pasteuria";15
+"499";"3228138";"Spirochaeta";15
+"500";"3228217";"Turneriella";15
+"501";"3228262";"Fibrobacter";15
+"502";"3228301";"Gemmatimonas";15
+"503";"3228350";"Pontibacter";15
+"504";"3228397";"Cytophaga";15
+"505";"3228479";"Crocinitomix";15
+"506";"3228481";"Fluviicola";15
+"507";"3228598";"Flavobacterium hydatis";15
+"508";"3228645";"Sphingobacterium";15
+"509";"3228687";"Chryseobacterium";15
+"510";"3228773";"Flexibacter";15
+"511";"3228793";"Haliscomenobacter";15
+"512";"3228812";"Pedobacter";15
+"513";"3228826";"Chitinophaga";15
+"514";"3228831";"Chitinophaga pinensis";15
+"515";"3228837";"Terrimonas";15
+"516";"3228843";"Rhodothermus";15
+"517";"3228858";"Adhaeribacter";15
+"518";"3228870";"Emticicia";15
+"519";"3228891";"Niastella";15
+"520";"3228894";"Dyadobacter";15
+"521";"3228931";"Cytophaga hutchinsonii";15
+"522";"3228980";"Pirellula";15
+"523";"3228981";"Pirellula staleyi";15
+"524";"3228987";"Isosphaera";15
+"525";"3228996";"Rhodopirellula";15
+"526";"3228998";"Gemmata";15
+"527";"3228999";"Gemmata obscuriglobus";15
+"528";"3229010";"Acidobacterium";15
+"529";"3229012";"Holophaga";15
+"530";"3229014";"Geothrix";15
+"531";"3229020";"Opitutus";15
+"532";"3229030";"Verrucomicrobium";15
+"533";"3229032";"Prosthecobacter";15
+"534";"3229040";"Levilinea";15
+"535";"3229042";"Caldilinea";15
+"536";"3229052";"Chloroflexus";15
+"537";"3229055";"Roseiflexus";15
+"538";"3235";"Piptocephalidaceae";2
+"539";"3235224";"Trinematidae";6
+"540";"3235464";"Bodonidae";3
+"541";"3235907";"Chlamydophryidae";6
+"542";"3236030";"Sphaeroeca";16
+"543";"3236919";"Vexillifera";16
+"544";"3237749";"Cytophagaceae";15
+"545";"3249165";"Nordiidae";16
+"546";"3295536";"Apiotrichum porosum";2
+"547";"3300";"Glomeraceae";2
+"548";"3323387";"Bolbitius vitellinus";2
+"549";"3384941";"Chytridium polysiphoniae";2
+"550";"3385303";"Rhizophlyctis harderi";2
+"551";"3442060";"Pyxidiophora arvernensis";2
+"552";"3451388";"Cordyceps cylindrica";2
+"553";"3464398";"Chaetosphaeria ciliata";2
+"554";"3481158";"Holwaya mucida";2
+"555";"3511";"Phytoseiidae";4
+"556";"3565";"Enchytraeidae";10
+"557";"3683164";"Hesperelaea palmeri";9
+"558";"3811";"Acidobacteriaceae";15
+"559";"3833";"Geodermatophilaceae";15
+"560";"3834";"Intrasporangiaceae";15
+"561";"3836";"Micrococcaceae";15
+"562";"3837";"Microbacteriaceae";15
+"563";"3838";"Micromonosporaceae";15
+"564";"3841";"Pseudonocardiaceae";15
+"565";"3848";"Acidimicrobiaceae";15
+"566";"3925";"Pinaceae";9
+"567";"4093";"Mortierellaceae";2
+"568";"4134";"Tuberaceae";2
+"569";"4279461";"Oxyrrhynchium hians";4
+"570";"4281960C1";"Romanomermis sichuanensis";16
+"571";"4307714";"Enchytraeus christenseni";16
+"572";"4308843";"Agriotes sordidus";4
+"573";"4348568";"Eumonhystera";6
+"574";"4349368";"Isolaimium multistriatum";16
+"575";"4378164";"Thaumatomastigidae";6
+"576";"4378322";"Apusomonadidae";6
+"577";"4378437";"Nolandella";16
+"578";"4378507C1";"Corythion dubium";16
+"579";"4387";"Thripidae";4
+"580";"4405791";"Ecumenicus";1
+"581";"4406135";"Veigaia";4
+"582";"4409812";"Enchytraeus norvegicus";16
+"583";"4409817";"Enchytraeus bulbosus";16
+"584";"4409880";"Marionina filiformis";16
+"585";"4409889";"Marionina cf. minutissima PDW-2010";16
+"586";"4409891";"Marionina clavata";16
+"587";"4409927";"Achaeta cf. bohemica PDW-2010";16
+"588";"4410245";"Eudrilus eugeniae";4
+"589";"4410498";"Satchellius mammalis";4
+"590";"4410653";"Lumbricus castaneus";4
+"591";"4410657";"Lumbricus terrestris";4
+"592";"4410938";"Allolobophora chlorotica";4
+"593";"4424949";"Aphodius johnsoni";4
+"594";"4438583";"Tachyporus hypnorum";5
+"595";"4445230";"Choleva angustata";5
+"596";"4476667";"Trechus quadristriatus";4
+"597";"4520829";"Peyerimhoffia alpina";4
+"598";"4537148";"Sminthurinus bimaculatus";4
+"599";"4538324";"Tetrodontophora bielanensis";4
+"600";"4548736";"Veigaia nemorensis";4
+"601";"4549547";"Uropoda orbicularis";4
+"602";"4554365";"Longidorus raskii";16
+"603";"4554383";"Longidorus vinearum";16
+"604";"4554435";"Xiphinema diversicaudatum";16
+"605";"4555808";"Metateratocephalus";6
+"606";"4555937";"Neopsilenchus magnidens";16
+"607";"4555966";"Boleodorus volutus";16
+"608";"4556103";"Tylenchus arcuatus";16
+"609";"4556193";"Merlinius brevidens";16
+"610";"4556197";"Merlinius joctus";16
+"611";"4556202";"Merlinius cf. microdorus TSH-2005";16
+"612";"4556265";"Amplimerlinius icarus";16
+"613";"4556321";"Pratylenchoides ritteri";7
+"614";"4556368";"Rotylenchulus borealis";16
+"615";"4556370";"Rotylenchulus reniformis";16
+"616";"4556520";"Helicotylenchus varicaudatus";16
+"617";"4559485";"Seinura demani";16
+"618";"4572757";"Singulisphaera";15
+"619";"4575424";"Luteolibacter";15
+"620";"4645";"Funariaceae";4
+"621";"4653212";"Oribatida";10
+"622";"4653827";"Stigmalychus";4
+"623";"4663886";"Blaberolaelaps";4
+"624";"4671";"Pottiaceae";4
+"625";"4676";"Geraniaceae";9
+"626";"4688";"Betulaceae";9
+"627";"4707";"Planococcaceae";15
+"628";"4721";"Gemmatimonadaceae";15
+"629";"4723";"Caulobacteraceae";15
+"630";"4726";"Methylocystaceae";15
+"631";"4728";"Acetobacteraceae";15
+"632";"4729";"Rhodobacteraceae";15
+"633";"4730";"Rhodospirillaceae";15
+"634";"4812533";"Fridericia bisetosa";16
+"635";"4812535";"Fridericia galba";16
+"636";"4852";"Chlorellaceae";4
+"637";"4876";"Polyangiaceae";15
+"638";"4884890";"Luedemannella";15
+"639";"4886632";"Mucilaginibacter";15
+"640";"4886653";"Capsellina";16
+"641";"4886727";"Longilinea";15
+"642";"4887124";"Edaphobacter";15
+"643";"4887298";"Terriglobus";15
+"644";"4888232";"Geoalkalibacter";15
+"645";"4888636";"Segetibacter";15
+"646";"4888700";"Lishizhenia";15
+"647";"4888729";"Pseudolabrys";15
+"648";"4889775";"Arenimonas";15
+"649";"4890869";"Humibacter";15
+"650";"4891451";"Caenimonas";15
+"651";"4891819";"Perlucidibaca";15
+"652";"4892105";"Byssovorax";15
+"653";"4892213C1";"Apusomonas proboscidea";16
+"654";"4893086";"Leptomyxa";16
+"655";"4893086C1";"Leptomyxa reticulata";10
+"656";"4893097";"Flavisolibacter";15
+"657";"4895670";"Undibacterium";15
+"658";"4896482";"Heteromita";16
+"659";"4898692";"Bodomorpha";16
+"660";"4899";"Enterobacteriaceae";15
+"661";"4899951";"Poterioochromonas";3
+"662";"4899951C1";"Poterioochromonas malhamensis";3
+"663";"4899951C2";"Poterioochromonas stipitata";3
+"664";"4900166";"Rhogostoma";16
+"665";"4900166C1";"Rhogostoma schuessleri";16
+"666";"4900657";"Ktedonobacter";15
+"667";"4900802";"Heteromitidae";6
+"668";"4901371";"Demequina";15
+"669";"4901672";"Erythrobacteraceae";15
+"670";"4901674";"Altererythrobacter";15
+"671";"4901805";"Haliea";15
+"672";"4902158";"Moraxella osloensis";15
+"673";"4903400";"Bellilinea";15
+"674";"4903787";"Chitinophagaceae";15
+"675";"4906759";"Sphenoderia";16
+"676";"4912196";"Eocercomonas";16
+"677";"4921124";"Plasmodiophoridae";16
+"678";"5023058";"Notiophilus rufipes";4
+"679";"5166886";"Isotoma viridis";4
+"680";"5167040";"Tullbergia yosii";4
+"681";"5167064";"Sminthurus viridis";4
+"682";"5237438";"Dioszegia crocea";2
+"683";"5241275";"Pluteus petasatus";2
+"684";"5243715";"Campanella subdendrophora";2
+"685";"5245040";"Serpula incrassata";2
+"686";"5249037";"Stephanospora caroticolor";2
+"687";"5249473";"Sphaerobolus stellatus";2
+"688";"5249953";"Waitea circinata";2
+"689";"5250615";"Absidia glauca";2
+"690";"5251089";"Glomus invermaium";2
+"691";"5258926";"Orbicula parietina";2
+"692";"5258938";"Stephensia shanorii";2
+"693";"5259396";"Boudiera acanthospora";2
+"694";"5262297";"Phoma herbarum";2
+"695";"5265849";"Hantzschia amphioxys";4
+"696";"5266190";"Nitzschia pusilla";4
+"697";"5270951";"Chlorella emersonii";4
+"698";"5271044";"Chlamydomonas";4
+"699";"5271044C1";"Chlamydomonas philotes";4
+"700";"5271221";"Chlamydomonas reinhardtii";4
+"701";"5271881";"Chlorococcum";4
+"702";"5280516";"Barbula unguiculata";4
+"703";"5284884";"Picea abies";9
+"704";"5290052";"Zea mays";9
+"705";"5386";"Fabaceae";9
+"706";"5394473";"Taraxacum kok-saghyz";9
+"707";"5424088";"Pythium monospermum";12
+"708";"5425542";"Trinema enchelys";16
+"709";"5427444";"Nitrospira marina";15
+"710";"5433907";"Pythium rostratifingens";16
+"711";"5436536";"Vampyrella pendula";16
+"712";"5438";"Burkholderiaceae";15
+"713";"5439";"Comamonadaceae";15
+"714";"5467845";"Cryptococcus amylolentus";2
+"715";"5499811";"Genea fragrans";2
+"716";"5607";"Pseudomonadaceae";15
+"717";"5611";"Xanthomonadaceae";15
+"718";"5613";"Opitutaceae";15
+"719";"5730694";"Euglypha rotunda";16
+"720";"5730696";"Euglypha tuberculata";16
+"721";"5730700";"Trinema lineare";16
+"722";"5739693";"Buchholzia fallax";16
+"723";"5776914";"Nygolaimus cf. brachyuris JH-2004";16
+"724";"5777105";"Paratylenchus cf. neoamblicephalus";16
+"725";"5777119";"Paratylenchus similis";16
+"726";"5889471";"Diplogasteroides magnus";16
+"727";"5899695";"Paracercomonas";16
+"728";"5899695C1";"Paracercomonas astra";16
+"729";"5899695C2";"Paracercomonas compacta";16
+"730";"5899695C3";"Paracercomonas filosa";16
+"731";"5899695C4";"Paracercomonas paralaciniaegerens";16
+"732";"5899723";"Massisteria marina";16
+"733";"5900469";"Cenarchaeum symbiosum";3
+"734";"5905178";"Ilumatobacter";15
+"735";"5907331";"Luteimonas aestuarii";15
+"736";"5912003";"Sphingobium olei";15
+"737";"5917830";"Fibrella";15
+"738";"5953400";"Psora";2
+"739";"5955050";"Sistotrema";2
+"740";"5980";"Trichodoridae";16
+"741";"5984";"Qudsianematidae";16
+"742";"5986";"Aporcelaimidae";16
+"743";"6026760";"Conopodium majus";9
+"744";"6064";"Rhagidiidae";4
+"745";"6083";"Parasitidae";4
+"746";"6103";"Lumbricidae";4
+"747";"6108754";"Iamia";15
+"748";"6123596";"Diaphanoeca spiralifurca";16
+"749";"6320394";"Trinema";16
+"750";"6390748";"Persicaria";9
+"751";"6391433";"Fallopia multiflora";9
+"752";"6453386";"Nitrosopumilaceae";3
+"753";"6453387";"Nitrosopumilus";3
+"754";"6463";"Tylenchidae";16
+"755";"6465";"Hoplolaimidae";16
+"756";"6509";"Anatonchidae";16
+"757";"6533843";"Dehalococcoides";15
+"758";"6533858";"Elusimicrobium";15
+"759";"6562811";"Moorella";15
+"760";"6587163";"Preussia";2
+"761";"6634";"Cucurbitaceae";9
+"762";"6636";"Caricaceae";9
+"763";"6639";"Urticaceae";9
+"764";"6657";"Sapindaceae";9
+"765";"6664";"Salicaceae";9
+"766";"6683";"Melastomataceae";9
+"767";"6716";"Aquifoliaceae";9
+"768";"6720";"Apiaceae";9
+"769";"7023889";"Merliniidae";16
+"770";"7026301";"Plectus aquatilis";16
+"771";"7131";"Chromulinaceae";3
+"772";"7212";"Neanuridae";4
+"773";"7214";"Isotomidae";4
+"774";"7215";"Hypogastruridae";4
+"775";"7216";"Entomobryidae";4
+"776";"7235427";"Paratylenchus";7
+"777";"7239018";"Apiotrichum";2
+"778";"7351754";"Vorticella";16
+"779";"7352338";"Prorodon";16
+"780";"7362059";"Septoglomus";2
+"781";"7365025";"Pseudouroleptus";16
+"782";"7369804";"Fridericia christeri";16
+"783";"7381412";"Bicosoeca petiolata";16
+"784";"7385619";"Blepharisma hyalinum";1
+"785";"7388975";"Alternaria";2
+"786";"7396624";"Pseudovorticella";16
+"787";"7400549";"Arenimonas daechungensis";15
+"788";"7410447";"Dileptus";16
+"789";"7410456";"Catenulispora graminis";15
+"790";"7417472";"Scutellospora alterata";2
+"791";"7423747";"Holostichidae";16
+"792";"7434304";"Zoothamnium";16
+"793";"7441738";"Fridericia sohlenii";16
+"794";"7455377";"Craterocolla cerasi";2
+"795";"7457456";"Obertrumia georgiana";10
+"796";"7460";"Oribatulidae";4
+"797";"7462160";"Aciditerrimonas";15
+"798";"7467984";"Oxytricha";16
+"799";"7468873";"Pseudocyrtolophosis alpestris";6
+"800";"7477764";"Hemiamphisiella terricola";5
+"801";"7501881";"Georgfuchsia";15
+"802";"7506466";"Ferrithrix";15
+"803";"7507829";"Luticola permuticopsis";4
+"804";"7512659";"Novosphingobium";15
+"805";"7513382";"Zavarzinella";15
+"806";"7518643";"Maryna ovata";6
+"807";"7550989";"Sinomonas";15
+"808";"7554783";"Cetraspora nodosa";2
+"809";"7559248";"Colpoda inflata";6
+"810";"7566235";"Geobacter anodireducens";15
+"811";"7566978C1";"Pseudoplatynematum denticulatum";16
+"812";"7571";"Chytridiaceae";2
+"813";"7571206";"Monilicaryon monilatum";16
+"814";"7575131";"Chamaedrilus";16
+"815";"7575660";"Euplotidae";16
+"816";"7576647";"Lumbricus centralis";4
+"817";"7578300";"Funneliformis mosseae";2
+"818";"7578709";"Ignavibacterium";15
+"819";"7592743";"Ferruginibacter";15
+"820";"7595878";"Arcuospathidium namibiense";16
+"821";"7600333";"Hantzschia";4
+"822";"7602988";"Tetrahymenidae";16
+"823";"7606064";"Picea";9
+"824";"7606454";"Lacibacter";15
+"825";"7609484";"Phycisphaera mikurensis";15
+"826";"7617598";"Claroideoglomus claroideum";2
+"827";"7618454";"Fridericia magna";16
+"828";"7618777";"Bardeliella pulchra";6
+"829";"7622";"Gigasporaceae";2
+"830";"7623";"Diversisporaceae";2
+"831";"7628767";"Archaeorhizomyces";2
+"832";"7630327";"Fridericia isseli";16
+"833";"7634";"Tipulidae";4
+"834";"7639807";"Martelella endophytica";15
+"835";"7641695";"Pluteus phlebophorus";2
+"836";"7642033";"Dongia";15
+"837";"7650175";"Gaiella";15
+"838";"7668387";"Pseudovorticella punctata";16
+"839";"7675640";"Singulisphaera rosea";15
+"840";"7675782";"Stigmatella";15
+"841";"7680285";"Urostyla grandis";12
+"842";"7691700";"Bresslauides discoideus";12
+"843";"7703764";"Flavisolibacter rigui";15
+"844";"7715336";"Saccharibacillus";15
+"845";"7717";"Solanaceae";9
+"846";"7728833";"Rudaea";15
+"847";"7735326";"Tachysoma pellionellum";16
+"848";"7736279";"Aeromicrobium panaciterrae";15
+"849";"7737552";"Vertagopus";4
+"850";"7765764";"Sphingomonas changbaiensis";15
+"851";"7766976";"Spathidium simplinucleatum";16
+"852";"7779390";"Phialina salinarum";16
+"853";"7784418";"Anteholosticha gracilis";16
+"854";"7787296";"Meseres corlissi";16
+"855";"7787742";"Platyophrya";10
+"856";"7787742C1";"Platyophrya bromelicola";10
+"857";"7789319";"Blepharisma";16
+"858";"7794229";"Demequinaceae";15
+"859";"7799711";"Canavalia ensiformis";9
+"860";"7807526";"Bodo";3
+"861";"7809";"Planctomycetaceae";15
+"862";"7814";"Bradyrhizobiaceae";15
+"863";"7815";"Hyphomicrobiaceae";15
+"864";"7816";"Methylobacteriaceae";15
+"865";"7816034";"Spathidiidae";16
+"866";"7817";"Phyllobacteriaceae";15
+"867";"7818";"Rhizobiaceae";15
+"868";"7834375";"Amphileptus";16
+"869";"7842856";"Amplimerlinius";7
+"870";"7862147";"Granulicella paludicola";15
+"871";"7866880";"Euplotes balteatus";16
+"872";"7870834";"Archaeorhizomyces finlayi";2
+"873";"7879018";"Palaeospora spainiae";2
+"874";"7891174";"Amphileptidae";16
+"875";"7891973";"Kineosporia";15
+"876";"7892291";"Angustibacter luteus";15
+"877";"7897345";"Tetrahymena";16
+"878";"7902508";"Pseudochilodonopsis";16
+"879";"7904860";"Caudiholosticha sylvatica";16
+"880";"7913878";"Fistulifera";4
+"881";"7917666";"Terrimonas arctica";15
+"882";"7940377";"Thiohalospira";15
+"883";"7940383";"Vorticella campanula";16
+"884";"7945561";"Staphylococcus";15
+"885";"7951037";"Ohtaekwangia";15
+"886";"7957501";"Dileptus microstoma";16
+"887";"7958515";"Lacrymariidae";16
+"888";"7960295";"Pseudoplatyophrya nana";5
+"889";"7962370";"Streptomyces abietis";15
+"890";"7966900";"Cyphellophora sessilis";2
+"891";"7989755";"Fuscheria";16
+"892";"7990941C1";"Pentapharsodinium tyrrhenicum";4
+"893";"8001169";"Woronina pythii";16
+"894";"8002263";"Georgfuchsia toluolica";15
+"895";"8003630";"Rhizophagus intraradices";2
+"896";"8005235";"Chitinophaga oryziterrae";15
+"897";"8011702";"Athous";4
+"898";"8011754";"Ferrimicrobium";15
+"899";"8018537";"Mycobacterium";15
+"900";"8041250";"Lacrymaria marina";16
+"901";"8045705C1";"Syncystis mirabilis";16
+"902";"8065748";"Codosiga";16
+"903";"8066383";"Actinoallomurus";15
+"904";"8072867";"Platyophrya vorax";1
+"905";"8079935";"Nitrososphaera";3
+"906";"8079935C1";"Candidatus Nitrososphaera gargensis";3
+"907";"8084084";"Cultellothrix lionotiformis";16
+"908";"8085";"Nocardiaceae";15
+"909";"8087";"Nocardioidaceae";15
+"910";"8090887";"Anteholosticha monilata";16
+"911";"8091";"Streptomycetaceae";15
+"912";"8098413";"Bryometopus pseudochilodon";6
+"913";"8099";"Flavobacteriaceae";15
+"914";"8103";"Sphingobacteriaceae";15
+"915";"8108604";"Bryometopus sphagni";11
+"916";"8113";"Bacillaceae";15
+"917";"8118209";"Bresslaua vorax";1
+"918";"8132662";"Solitalea";15
+"919";"8136143";"Colpoda";10
+"920";"8138815";"Dokdonella ginsengisoli";15
+"921";"8139865";"Archaeorhizomyces borealis";2
+"922";"8142015";"Fridericia connata";16
+"923";"8161409";"Lumbricus friendi";4
+"924";"8161533";"Vorticellidae";16
+"925";"8165311";"Gonostomum namibiense";16
+"926";"8167254";"Anteholosticha";16
+"927";"8167254C1";"Anteholosticha rectangula";16
+"928";"8171593";"Tomentella";2
+"929";"8198844C1";"Leptopharynx bromelicola";16
+"930";"8212596";"Gonostomum strenuum";16
+"931";"8232225";"Caulobacter profundus";15
+"932";"8236668";"Cyrtolophosididae";10
+"933";"8246938";"Cultellothrix coemeterii";16
+"934";"8254023";"Anoplophrya marylandensis";16
+"935";"8255496";"Pedobacter luteus";15
+"936";"8255906";"Heterophrys";16
+"937";"8265293";"Achaeta affinis";16
+"938";"8267652";"Paratylenchus microdorus";16
+"939";"8280877C1";"Protocyclidium sinica";16
+"940";"8282501";"Tuber";2
+"941";"8286767";"Rudaea cellulosilytica";15
+"942";"8289527";"Gonostomum";16
+"943";"8292626";"Bdellovibrio exovorus";15
+"944";"8294946";"Homalogastra setosa";6
+"945";"8299209";"Vaucheria terrestris";4
+"946";"8312129";"Mayamaea";4
+"947";"8317892";"Rhizomicrobium";15
+"948";"8324907C1";"Monocystis agilis";10
+"949";"8332724";"Protaspis";16
+"950";"8353847";"Sediminibacterium";15
+"951";"8354269";"Phaselicystis";15
+"952";"8360084";"Mykophagophrys terricola";5
+"953";"8360645";"Sphingomonas fennica";15
+"954";"8365682C1";"Peregrinia clavideferens";16
+"955";"8369786";"Hygrocybe reidii";2
+"956";"8370031";"Gaiella occulta";15
+"957";"8374779";"Euplotes trisulcatus";16
+"958";"8380316";"Caudiholosticha";16
+"959";"8387843";"Epispathidium";16
+"960";"8391327";"Achaeta bifollicula";16
+"961";"8392425";"Steroidobacter";15
+"962";"8408880";"Thiobacillus";15
+"963";"8410027";"Euplotes";16
+"964";"8410027C1";"Euplotes qatarensis";16
+"965";"8420648";"Monosiga ovata";16
+"966";"8423927";"Epispathidium terricola";12
+"967";"8630017";"Cedrus";9
+"968";"8657939";"Acrospermum gramineum";2
+"969";"8701";"Botryidiopsidaceae";4
+"970";"8702";"Botryochloridaceae";4
+"971";"8736";"Bryaceae";4
+"972";"8742";"Mniaceae";4
+"973";"8750602";"Achaeta unibulba";16
+"974";"8766080";"Peziza";2
+"975";"8795";"Scenedesmaceae";4
+"976";"8816";"Chlamydomonadaceae";4
+"977";"8867112";"Ferruginibacter paludis";15
+"978";"8876572";"Fridericia tuberosa";16
+"979";"8886828";"Edaphobacter dinghuensis";15
+"980";"8891999";"Friesea grisea";4
+"981";"8922158";"Chamaedrilus aff. sphagnetorum C SM-2014";16
+"982";"8926";"Sphingomonadaceae";15
+"983";"8927";"Oxalobacteraceae";15
+"984";"8929";"Methylophilaceae";15
+"985";"8931";"Rhodocyclaceae";15
+"986";"8940667";"Protaspis obliqua";16
+"987";"8941";"Desulfuromonadaceae";15
+"988";"8944";"Myxococcaceae";15
+"989";"8951948";"Orciraptor agilis";16
+"990";"9044526";"Acrospermum";2
+"991";"9053167";"Fridericia sylvatica";16
+"992";"9171551C1";"Neobodo designis";3
+"993";"9180955";"Herpetomonas";3
+"994";"9206251";"Helianthus annuus";9
+"995";"9221087";"Achillea millefolium";9
+"996";"9330269";"Altererythrobacter buctense";15
+"997";"9345269";"Vorticellides";16
+"998";"9375673";"Sclerostagonospora";2
+"999";"9381748C1";"Articulospora proliferata";2
+"1000";"9395544";"Rubrobacter";15
+"1001";"9397538";"Viridiraptoridae";10
+"1002";"9405333";"Sediminibacterium aquarii";15
+"1003";"9407921";"Actinomyces";15
+"1004";"9422198";"Pseudaphelenchus";5
+"1005";"9426362";"Allovahlkampfia";10
+"1006";"9430745";"Chamaedrilus aff. glandulosus A SM-2014";16
+"1007";"9467085";"Mucor";2
+"1008";"9473002";"Euduboscquella";4
+"1009";"9530095C1";"Platyreta germanica";10
+"1010";"9545";"Verrucomicrobiaceae";15
+"1011";"9571613";"Phenylobacterium";15
+"1012";"9572544";"Basiria";7
+"1013";"9577926";"Planctomyces";15
+"1014";"9582951";"Nocardia";15
+"1015";"9598872";"Neourostylopsis";16
+"1016";"9623011";"Penicillium";2
+"1017";"9659532";"Filobasidium stepposum";2
+"1018";"9676124";"Phyllobacterium";15
+"1019";"9690045";"Itersonilia pannonica";2
+"1020";"9697977";"Diversispora varaderana";2
+"1021";"9703717";"Thaumatomonas";3
+"1022";"9744773";"Hodophilus hymenocephalus";2
+"1023";"9758565";"Hymenochaetopsis olivacea";2
+"1024";"9762970";"Ochromonas";3
+"1025";"9762970C1";"Ochromonas vasocystis";3
+"1026";"9806438";"Lumbricus";4
+"1027";"9815647";"Epistylis";16

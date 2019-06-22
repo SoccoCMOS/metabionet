@@ -1,0 +1,382 @@
+;Name;Level;conflict
+6;Aphanomyces;genus;0
+11;Beauveria;genus;0
+15;Cystobasidium;genus;0
+19;Herpetomonas;genus;0
+21;Heterodera;genus;0
+28;Magnaporthe;genus;0
+227;Pratylenchus;species;0
+228;Protomyces;genus;0
+401;Acrobeloides;genus;0
+403;Alaimus;genus;0
+405;Alicorhagia;genus;0
+406;Allovahlkampfia;genus;0
+437;Auxarthron;genus;0
+440;Basiria;genus;0
+450;Bodo;genus;0
+455;Bullera;genus;0
+456;Camarophyllus;genus;0
+458;Catenaria;genus;0
+477;Chromosera;genus;0
+485;Clarkus;genus;0
+508;Dictyosporium;genus;0
+529;Ecumenicus;genus;0
+550;Eumonhystera;genus;0
+554;Geophilidae;family;0
+629;Mallomonadaceae;family;0
+654;Metateratocephalus;genus;0
+657;Mucor;genus;0
+668;Nucleariidae;family;0
+693;Odontolaimus;genus;0
+706;Panaeolus;genus;0
+710;Paulinellidae;family;0
+718;Phaeosphaeria;genus;0
+726;Preussia;genus;0
+742;Pseudaphelenchus;genus;0
+744;Psora;genus;0
+758;Rhabditis;genus;0
+760;Rhabdolaimus;genus;0
+776;Scytinostroma;genus;0
+786;Sphenoderiidae;family;0
+805;Sporobolomyces;genus;0
+823;Talaromyces;genus;0
+840;Tripyla;genus;0
+847;Tyrophagus;genus;0
+878;Pemphigus;genus;0
+898;Athous;genus;0
+975;Enchtraeidae;family;0
+977;Pisum;genus;0
+978;Trifolium;genus;0
+986;Soil Organic Matter;NA;0
+987;Ranunculacae;family;0
+990;Calliphoridae;family;0
+991;Muscidae;family;0
+1004;Cucurbitaceae;family;0
+1005;Agropyron;genus;0
+1006;Agrostis;genus;0
+1007;Amaranthus;genus;0
+1008;Anethum;genus;0
+1009;Apium;genus;0
+1010;Arctium;genus;0
+1011;Avena;genus;0
+1012;Bidens;genus;0
+1014;Bromus;genus;0
+1015;Carex;genus;0
+1016;Cucumis;genus;0
+1018;Fragaria;genus;0
+1019;Hordeum;genus;0
+1020;Lactuca;genus;0
+1021;Lycopersicon;genus;0
+1022;Matricaria;genus;0
+1023;Nicotiana;genus;0
+1024;Petroselinum;genus;0
+1025;Phleum;genus;0
+1026;Plantago;genus;0
+1027;Poa;genus;0
+1028;Stellaria;genus;0
+1031;Veronica;genus;0
+1033;Acacia mearnsii;species;0
+1034;Acanthus mollis;species;0
+1036;Agrimonia;genus;0
+1037;Agrimonia pubescens;species;0
+1038;Alchemilla vulgaris;species;0
+1039;Alhagi;genus;0
+1040;Alhagi persarum;species;0
+1041;Allium cardiostemon;species;0
+1042;Aloe plicatilis;species;0
+1043;Anthriscus nemorosa;species;0
+1044;Arachis hypogaea;species;0
+1045;Arenaria fendleri;species;0
+1046;Arenaria peploides;species;0
+1047;Artemisia;genus;0
+1048;Artemisia parviflora;species;0
+1049;Asperula;genus;0
+1050;Atractylodes ;species;0
+1051;Avena sativa;species;0
+1052;Berberis;genus;0
+1053;Betonica officinalis;species;0
+1054;Bituminaria bituminosa;species;0
+1055;Bryonia alba;species;0
+1056;Buddleja;genus;0
+1057;Buxus;genus;0
+1058;Buxus balearica;species;0
+1059;Cajanus cajan;species;0
+1060;Cannabis sativa;species;0
+1062;Carica papaya;species;0
+1063;Carya illinoensis;species;0
+1064;Cassia occidentalis;species;0
+1065;Castilleja arachnoidea;species;0
+1066;Centaurea scabiosa;species;0
+1067;Centaurea solstitialis;species;0
+1068;Cerastium alpinum;species;0
+1069;Cerastium arvense;species;0
+1070;Cerastium cerastoides;species;0
+1071;Cerastium viscosum;species;0
+1072;Cerastium vulgatum;species;0
+1073;Chenopodium album;species;0
+1074;Chrysanthemum ;species;0
+1075;Chrysanthemum cinerariifolium;species;0
+1076;Chrysanthemum indicum;species;0
+1077;Chrysanthemum maximum;species;0
+1078;Cichorium intybus;species;0
+1079;Clematis;genus;0
+1080;Cochlearia officinalis;species;0
+1081;Conium maculatum;species;0
+1082;Convolvulus fruticosus;species;0
+1083;Convolvulus hamadae;species;0
+1084;Coptis trifolia;species;0
+1085;Cosmos sulphureus;species;0
+1086;Crotalaria juncea;species;0
+1088;Dahlia;genus;0
+1089;Daucus carota;species;0
+1090;Delphinium;genus;0
+1091;Dianthus;genus;0
+1092;Dianthus armeria;species;0
+1093;Digitalis grandiflora;species;0
+1094;Dittrichia viscosa;species;0
+1095;Dolichos lablab;species;0
+1096;Dryas octopetala;species;0
+1097;Dysoxylum decandrum;species;0
+1098;Elaeis guineensis;species;0
+1099;Euphorbia cyparissias;species;0
+1100;Ferula;genus;0
+1101;Foeniculum;genus;0
+1102;Fraxinus excelsior;species;0
+1103;Funaria hygrometrica;species;0
+1104;Galium mollugo;species;0
+1105;Galium physocarpum;species;0
+1106;Galium uliginosum;species;0
+1107;Halocnemum strobilaceum;species;0
+1108;Haplophyllum;genus;0
+1110;Hordeum vulgare;species;0
+1111;Humulus lupulus;species;0
+1112;Hyoscyamus albus;species;0
+1113;Ipomoea hederacea;species;0
+1114;Jatropha curcas;species;0
+1115;Jurinea;genus;0
+1117;Lycopersicon esculentum;species;0
+1118;Malus domestica;species;0
+1119;Malus sylvestris;species;0
+1120;Manihot utilissima;species;0
+1121;Marrubium velutinum;species;0
+1122;Medicago laciniata;species;0
+1123;Medicago sativa;species;0
+1124;Melilotus alba;species;0
+1125;Mentha ×piperita;species;0
+1126;Mesembryanthemum ;species;0
+1127;Murraya paniculata;species;0
+1128;Nerium;genus;0
+1129;Nerium indicum;species;0
+1130;Ocimum sanctum;species;0
+1131;Onobrychis viciifolia;species;0
+1132;Oryza;genus;0
+1133;Oryza australiensis;species;0
+1134;Oryza sativa;species;0
+1135;Phalaris arundinacea;species;0
+1136;Pharbitis hederacea;species;0
+1137;Phaseolus lunatus;species;0
+1138;Picea excelsa;species;0
+1139;Picea mariana;species;0
+1140;Pinus halepensis;species;0
+1141;Pinus kesiya;species;0
+1142;Pisum sativum;species;0
+1143;Polytrichum juniperinum;species;0
+1144;Prunus;genus;0
+1145;Pseudophoenix sargentii;species;0
+1146;Pseudotsuga menziesii;species;0
+1147;Rosa;genus;0
+1148;Rosa multiflora;species;0
+1149;Rumex;genus;0
+1150;Rumex crispus;species;0
+1152;Scrophularia leucoclada;species;0
+1153;Scrophularia nodosa;species;0
+1154;Scutellaria peregrina;species;0
+1155;Secale cereale;species;0
+1156;Setaria pumila;species;0
+1157;Solanum lycopersicum;species;0
+1158;Solanum tuberosum;species;0
+1159;Stachys palustris;species;0
+1160;Stachytarpheta dichotoma;species;0
+1161;Stachytarpheta jamaicensis;species;0
+1162;Tagetes erecta;species;0
+1163;Taraxacum officinale;species;0
+1164;Thuja;genus;0
+1165;Trifolium incarnatum;species;0
+1166;Trifolium pratense;species;0
+1167;Triticum aestivum;species;0
+1168;Urtica;genus;0
+1169;Urtica dioica;species;0
+1170;Verbena;genus;0
+1171;Vetiveria zizanioides;species;0
+1172;Vicia;genus;0
+1174;Agropyron repens;species;0
+1175;Agrostis palustris;species;0
+1177;Bromus inermis;species;0
+1178;Bromus tectorum;species;0
+1179;Cynodon dactylon;species;0
+1180;Elytrigia repens;species;0
+1181;Festuca elatior;species;0
+1182;Festuca myuros;species;0
+1183;Hordeum jubatum;species;0
+1185;Lolium;genus;0
+1186;Panicum dichotomiflorum;species;0
+1188;Poa annua;species;0
+1190;Sorghum arundinaceum;species;0
+1192;Sorghum verticilliflorum;species;0
+1195;Triticum spelta;species;0
+1199;Aegopodium;genus;0
+1200;Ammi majus;species;0
+1201;Angelica archangelica;species;0
+1202;Angelica sylvestris;species;0
+1203;Anthriscus caucalis;species;0
+1204;Anthriscus sylvestris;species;0
+1205;Aposeris foetida;species;0
+1206;Berula erecta;species;0
+1207;Carum carvi;species;0
+1208;Chaerophyllum hirsutum;species;0
+1209;Cirsium oleraceum;species;0
+1211;Crepis paludosa;species;0
+1212;Galinsoga parviflora;species;0
+1213;Helosciadium nodiflorum;species;0
+1214;Heracleum austriacum;species;0
+1215;Heracleum sphondylium;species;0
+1216;Lathyrus linifolius;species;0
+1217;Leontodon;genus;0
+1218;Mutellina adonidifolia;species;0
+1219;Mutellina purpurea;species;0
+1220;Oenanthe crocata;species;0
+1221;Sium erectum;species;0
+1222;Sonchus oleraceus;species;0
+1224;Torilis neglecta;species;0
+1227;Medicago;genus;0
+1228;Triticum;genus;0
+1229; Poaceae ;family;0
+1230; Brassicaceae ;family;0
+1231; Fabaceae ;family;0
+1232; Asteraceae ;family;0
+1233; Rosaceae ;family;0
+1234; Primulaceae ;family;0
+1235; Geraniaceae ;family;0
+1236; Lamiaceae ;family;0
+1237; Amaranthaceae ;family;0
+1238; Balsaminaceae ;family;0
+1239; Linaceae ;family;0
+1240; Streptophytina ;family;0
+1241; Cucurbitaceae ;family;0
+1242; Solanaceae ;family;0
+1243;Asterionella;genus;0
+1246;Abelmoschus esculentus;species;0
+1248;Actinidia chinensis;species;0
+1249;Ageratum conyzoides;species;0
+1250;Ageratum houstonianum;species;0
+1251;Allium cepa;species;0
+1252;Allium sativum;species;0
+1254;Arracacia xanthorrhiza;species;0
+1255;Asparagus officinalis;species;0
+1256;Averrhoa carambola;species;0
+1257;Beta vulgaris;species;0
+1258;Callistephus chinensis;species;0
+1259;Camellia sinensis;species;0
+1260;Capsicum ;species;0
+1261;Capsicum annuum;species;0
+1263;Catharanthus roseus;species;0
+1264;Chromolaena odorata;species;0
+1266;Citrullus lanatus;species;0
+1267;Citrus ;species;0
+1268;Citrus limon;species;0
+1269;Citrus sinensis;species;0
+1270;Convolvulus arvensis;species;0
+1271;Corylus ;species;0
+1272;Cucumis melo;species;0
+1273;Cucumis sativus;species;0
+1274;Cucurbita moschata;species;0
+1275;Cucurbita pepo;species;0
+1276;Dahlia pinnata;species;0
+1277;Dianthus caryophyllus;species;0
+1278;Diospyros;species;0
+1279;Elettaria cardamomum;species;0
+1280;Enterolobium cyclocarpum;species;0
+1281;Euonymus alatus;species;0
+1282;Euphorbia pulcherrima;species;0
+1284;Ficus carica;species;0
+1285;Fragaria ananassa;species;0
+1286;Freesia ;species;0
+1287;Gerbera;species;0
+1288;Gerbera jamesonii;species;0
+1289;Glycine max;species;0
+1290;Gossypium ;species;0
+1291;Gypsophila;species;0
+1292;Hedera helix;species;0
+1294;Ilex crenata;species;0
+1295;Impatiens ;species;0
+1296;Ipomoea batatas;species;0
+1297;Lactuca sativa;species;0
+1299;Manihot esculenta;species;0
+1301;Mentha ;species;0
+1302;Nicotiana tabacum;species;0
+1303;Orchidaceae ;species;0
+1305;Papaver orientale;species;0
+1306;Pelargonium ;species;0
+1307;Phaseolus ;species;0
+1308;Phaseolus vulgaris;species;0
+1309;Phoenix dactylifera;species;0
+1310;Prunus avium;species;0
+1311;Prunus cerasus;species;0
+1312;Prunus domestica;species;0
+1313;Prunus dulcis;species;0
+1314;Prunus persica;species;0
+1315;Prunus salicina;species;0
+1316;Pueraria montana;species;0
+1317;Pyrus communis;species;0
+1318;Rhododendron ;species;0
+1319;Ribes nigrum;species;0
+1320;Ribes rubrum;species;0
+1321;Ricinus communis;species;0
+1322;Rosa ;species;0
+1323;Rosa chinensis;species;0
+1324;Rubus idaeus;species;0
+1325;Rubus loganobaccus;species;0
+1326;Salvia splendens;species;0
+1327;Sechium edule;species;0
+1328;Sesamum indicum;species;0
+1330;Solanum melongena;species;0
+1331;Sorghum bicolor;species;0
+1332;Stachys arvensis;species;0
+1333;Terminalia catappa;species;0
+1334;Tilia cordata;species;0
+1335;Trifolium repens;species;0
+1336;Trifolium vesiculosum;species;0
+1337;Vicia faba;species;0
+1338;Vicia sativa;species;0
+1340;Vigna radiata;species;0
+1341;Vigna unguiculata;species;0
+1342;Viola odorata;species;0
+1343;Vitis vinifera;species;0
+1344;Withania somnifera;species;0
+1345;Zantedeschia aethiopica;species;0
+1348;Agrostis capillaris;species;0
+1349;Agrostis stolonifera;species;0
+1352;Festuca arundinacea;species;0
+1353;Festuca nigrescens;species;0
+1354;Lolium perenne;species;0
+1355;Panicum tennesseense;species;0
+1356;Panicum virgatum;species;0
+1357;Paspalum vaginatum;species;0
+1359;Pennisetum clandestinum;species;0
+1361;Poa pratensis;species;0
+1362;Poa trivialis;species;0
+1363;Setaria italica;species;0
+1364;Trifolium aestivum;species;0
+1365;Trifolium subterraneum;species;0
+1409;Light;NA;0
+1420;Decaying_wood;NA;0
+1839;Ranunculaceae;family;0
+1840;Euphorbiaceae;family;0
+1841;Rosaceae;family;0
+1843;Primulaceae;family;0
+1844;Plantaginaceae;family;0
+1845;Violaceae;family;0
+1850;Salicaceae;family;0
+1864;Chenopodiaceae;family;0
+1865;Solanaceae;family;0
+1868;Liliaceae;family;0

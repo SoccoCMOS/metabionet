@@ -1,0 +1,397 @@
+---
+title: 'ANR BISE: Analyzing trophic webs accross agricultural sites with different
+  treatments.'
+output:
+  html_document:
+    df_print: paged
+encoding: UTF-8
+---
+
+```{r setup }
+knitr::opts_knit$set(root.dir = "D:/Knowledge-based/BISE/meta-bio-net/Bionet_V2/")
+knitr::opts_knit$set(warning = FALSE, include=FALSE)
+```
+
+#Setting global parameters
+```{r warning=FALSE, include=FALSE}
+workdir="D:/Knowledge-based/BISE/meta-bio-net/Bionet_V2/"
+source(paste(workdir,"Init.R",sep=""))
+### Files
+file_kwBase=paste(workdir,"Knowledge/KB.csv",sep="")
+file_occurBase=paste(workdir,"Data/normalized_metabar_out.csv",sep="")
+experimental_setting=paste(workdir,"Data/experimental_setting.csv",sep="")
+
+file_raw_adjacency=paste(workdir,"Applications/BISE/out/metaweb_adj/bin_adjacency.csv",sep="")
+file_raw_weighted_adjacency=paste(workdir,"Applications/BISE/out/metaweb_adj/weighted_adjacency.csv",sep="")
+
+file_sbm_groups=paste(workdir,"Applications/BISE/out/sbmmetaweb_adj/trophic_groups_memberships.csv",sep="")
+file_sbm_adjacency=paste(workdir,"Applications/BISE/out/sbmmetaweb_adj/trophic_groups_adjacency.csv",sep="")
+
+### Data structures
+##Knowledge base: what columns to fetch
+kb_resource_metadata=c("resource","resource_name","resource_rank","res_surf","res_subsurf","res_soil")
+kb_consumer_metadata=c("consumer","consumer_name","consumer_rank","cons_surf","cons_subsurf","cons_soil")
+taxa_metadata_colnames=c("key","name","rank","surf","subsurf","soil")
+
+edge_ends=c("resource","consumer")
+edge_attributes=c("type","cooccur")
+
+### Level of organization of experimental setting ###
+levels=c("Site","Parcelle","Echantillon","Repet")
+
+##Metabar output
+###what columns define taxa information
+metabar_taxa_metadata=c("key","verbatimScientificName","broad")
+###what columns contain occurrence data
+sample_ids=function(x){
+  return(colnames(x)[grep("BISE_*",colnames(x))])
+}
+
+### Thresholds
+min_prob=0.1  ###Minimum probability of co-occurrence (habitat sharing) to accept interaction
+min_occur=1 ###Minimum occurrence count to consider actual presence
+sbm_done=0
+beta_done=1
+betapt_done=1
+sbmbetapt_done=0
+
+### Output files
+### Saving ###
+file_alphametrics_taxa=paste(workdir,"Applications/BISE/out/taxa_topo_energetics_metrics.csv",sep="")
+file_alphametrics_groups=paste(workdir,"Applications/BISE/out/groups_topo_energetics_metrics.csv",sep="")
+file_alltaxa_rds=paste(workdir,"Applications/BISE/out/taxa_analysis.rds",sep="")
+file_beta=paste(workdir,"Applications/BISE/out/beta/betadiv.csv",sep="")
+file_beta_pt=paste(workdir,"Applications/BISE/out/beta/betadiv_pt_",sep="")
+file_sbmbeta_pt=paste(workdir,"Applications/BISE/out/beta/sbmbetadiv_pt.csv",sep="")
+file_redund_fct=paste(workdir,"Applications/BISE/out/func_redund/redund_fct.csv",sep="")
+file_agg_func_occur=paste(workdir,"Applications/BISE/out/func_redund/occur_fct.csv",sep="")
+```
+
+#Knowledge base load and preparation
+First, we load the knowledge base of ecological interactions.
+
+```{r}
+### Knowledge base ###
+edge_kb= read.csv2(file_kwBase,dec=".")
+cat("Knowledge base contains: ",dim(edge_kb)[1],"edges \n",sep=" ")
+```
+
+Some statistics about our knowledge base so far ...
+
+```{r}
+### Taxa related knowledge ###
+#edge_kb$resource_rank%in%c("FAMILY","GENUS","SPECIES","RESOURCE")
+resource_metadata=unique(edge_kb[,kb_resource_metadata])
+consumer_metadata=unique(edge_kb[,kb_consumer_metadata])
+colnames(resource_metadata)=colnames(consumer_metadata)=taxa_metadata_colnames
+taxa_kb=unique(rbind(resource_metadata,consumer_metadata))
+
+## Delete unused data ##
+rm(resource_metadata)
+rm(consumer_metadata)
+
+cat("Knowledge base covers: ",dim(taxa_kb)[1],"taxa \n",sep=" ")
+#summary(taxa_metadata)
+```
+
+#Occurrence dataset load and preparation
+Load motu occurrence dataset (the file has been preprocessed previously so that motu names match the taxonomy we're using)
+
+```{r}
+### MOTU occurrence dataset ###
+raw_metabar=read.csv2(file_occurBase)
+### Occurrence columns ###
+pt_names=sample_ids(raw_metabar)
+metabar=subset(raw_metabar,rowSums(raw_metabar[,pt_names])>0)
+cat("MOTU dataset contains: ",dim(metabar)[1],"motus \n",sep=" ")
+rm(raw_metabar)
+fac<-read.csv2(experimental_setting)
+```
+
+Some MOTUs are assigned to taxa not covered in our knowledge base, we decided to drop them. However, a vast majority of MOTUs are well covered. 
+```{r}
+### Filtering MOTUs not covered in knowledge base  ###
+list_keys=unique(metabar[,metabar_taxa_metadata])
+motu_uncovered=subset(list_keys,!(key %in% edge_kb$resource) & !(key%in% edge_kb$consumer))
+motu_covered=subset(list_keys,key %in% edge_kb$resource | key%in% edge_kb$consumer)
+cat("MOTU coverage in knowledge base: ",100*dim(motu_covered)[1]/dim(list_keys)[1],"%\n")
+rm(list_keys)
+rm(motu_uncovered)
+taxa_metadata=merge(motu_covered,taxa_kb,by="key")
+#taxa_metadata=subset(o,rank%in%c("FAMILY","GENUS","SPECIES","RESOURCE"))
+rm(motu_covered)
+rm(taxa_kb)
+```
+
+We'll subset part of the knowledge base that is of interest to the community composition we have in our hands.
+```{r}
+sub_edges=subset(edge_kb,edge_kb$resource%in%taxa_metadata$key & edge_kb$consumer%in%taxa_metadata$key)
+  cat("Covered taxa in knowledge base are involved in ",dim(sub_edges)[1]," known interactions with proportions of trophic and parasitism of respectively: \n",100*(summary(sub_edges[,c("type")])/dim(sub_edges)[1]))
+
+rm(edge_kb)
+```
+
+We'll now proceed to aggregating MOTUs assigned to the same taxon by summing their occurrences (read counts) in each sampling point. 
+```{r}
+### Aggregating MOTU data to the occurrence point ###
+cat("Selecting occurrences of covered taxa in the knowledge base \n")
+submetabar=metabar[metabar$key %in%taxa_metadata$key,c("key",pt_names)]
+rm(metabar)
+agg_occur=aggregate(submetabar[,pt_names],
+                    by=list(
+                      key=submetabar$key),
+                      #verbatimScientificName=submetabar$verbatimScientificName,
+                      #broad=submetabar$broad),
+                      FUN=sum)
+rm(submetabar)
+```
+
+Drop some plot statistic of aggregated occurrences here. 
+
+# Metaweb construction workflow
+So, at this point we have all it takes to run the automated workflow, that is a nice knowledge base of interactions edge_kb and a ready to use occurrence dataset agg_occur all involving the subset of taxa described in taxa_metadata.  
+
+## Building the metaweb and computing metrics on projected networks
+```{r}
+alltaxa_analysis=meta_bionet_workflow(sub_edges,agg_occur,taxa_metadata,
+                          name="BISE",pt_names=pt_names,
+                          rank_filter=c("FAMILY","GENUS","SPECIES","RESOURCE"),
+                               edge_ends=edge_ends,edge_attributes=edge_attributes,
+                               weight_att=2,type_att=1,min_prob=min_prob,min_occur=min_occur,
+                               verb=0)
+
+saveRDS(alltaxa_analysis,file = file_alltaxa_rds)
+### Saving statistics ###
+write.csv2(cbind(fac,alltaxa_analysis$TopoEnMetrics),file=file_alphametrics_taxa,row.names = F)
+```
+
+## Network betadiversity metrics
+<!-- Here, we analyze betadiversity between observations, at repetition level -->
+<!-- ```{r} -->
+<!-- eta=0 -->
+<!-- if(beta_done==0){ -->
+<!--   betadivdf=betanet(gList=alltaxa_analysis$SubNetworks, -->
+<!--                     file_beta = file_beta,pt_names = lnames,div='P',eta=eta) -->
+<!--   beta_done=1 -->
+<!-- }else{ -->
+<!--   betadivdf=read.csv2(file_beta,row.names = 1) -->
+<!-- } -->
+<!-- ``` -->
+
+Here, we analyze betadiversity between points ...
+
+First, we aggregate occurrences to the point level
+```{r}
+lnames=unlist(lapply(1:64, function(x) sprintf("BISE_%02d",x)))
+lgroups=rep(lnames,each=4)
+names(lgroups)=pt_names
+agg_occur_pt<-aggregate_occur(agg_occur,pt_names,lgroups)
+```
+
+Then, we project the metaweb to the new occurrences:
+```{r}
+pointlevel_analysis=meta_bionet_workflow(sub_edges,agg_occur_pt$df,taxa_metadata,
+                               name="BISE_PT",pt_names=lnames,
+                          rank_filter=c("FAMILY","GENUS","SPECIES","RESOURCE"),
+                               edge_ends=edge_ends,edge_attributes=edge_attributes,
+                               weight_att=2,type_att=1,min_prob=min_prob,min_occur=min_occur,
+                               verb=0)
+```
+
+Finally, we compute the betadiversity between the 64 point-level local networks
+```{r message=FALSE}
+eta=c(0,1,2)
+divs=c('P','L')
+if(betapt_done==0){
+for (div in divs){
+  for (e in eta){
+      betadiv_ptdf=betanet(gList=pointlevel_analysis$SubNetworks,
+                           file_beta = paste(file_beta_pt,"_",e,"_",div,".csv",sep=""),
+                           pt_names = lnames,div=div,eta=e)
+  }
+}
+  betapt_done=1
+}else{
+  for(div in divs){
+    for(e in eta){
+      betadiv_ptdf=read.csv2(paste(file_beta_pt,"_",e,"_",div,".csv",sep=""),row.names = 1)
+      x=pcoa_plot(D=as.dist(betadiv_ptdf),Y=NULL,corr="none")
+    }
+  }
+}
+```
+
+
+# Metaweb clustering
+In this part, we apply SBM to infer trophic groups from metaweb
+
+## Stochastic Block Model
+```{r}
+if(sbm_done==0){
+  metaweb=alltaxa_analysis$Metaweb
+  metaweb$print()
+  ### We remove resource nodes ###
+  metaweb$graph=delete_vertices(metaweb$graph,c("R1","R2","R3"))
+  metaweb$print()
+  ### Actual clustering ###
+  sbm_out=troph_sbm(metaweb,file_raw_adjacency,file_raw_weighted_adjacency,file_sbm_groups,file_sbm_adjacency,minim=10)
+  #### Get learnt parameters ###
+  trophic_groups=sbm_out$tg
+  sbm_adj=sbm_out$adj
+  sbm_done=1
+}else{
+  trophic_groups=read.csv2(file_sbm_groups,row.names=1)
+  sbm_adj=read.csv2(file_sbm_adjacency,row.names = 1)
+}
+```
+
+## Functional diversity
+Analyzing the functional composition of our communities
+```{r}
+trophic_groups=read.csv2(file_sbm_groups,row.names = 1)
+func_occur=merge(agg_occur,trophic_groups,by.x="key",by.y="keys")
+agg_func_occur=aggregate(func_occur[,pt_names]>0,by = list(trophGroup=func_occur$trophic_group),FUN = sum)
+fac_func_occur=data.frame(t(agg_func_occur[,2:dim(agg_func_occur)[2]]))
+colnames(fac_func_occur)<-agg_func_occur$trophGroup
+
+rf=cbind(fac,redund_fct(agg_func_occur,pt_names,eta=c(0,1,2)))
+rf_counts=cbind(fac,fac_func_occur)
+
+rm(fac_func_occur)
+rm(fac_func_occur)
+rm(agg_func_occur)
+rm(func_occur)
+
+write.csv2(rf,file=file_redund_fct,row.names = F)
+write.csv2(rf_counts,file_agg_func_occur,row.names = F)
+```
+
+## Trophic groups betadiversity
+At point level (64 points) of SBM groups
+```{r message=FALSE}
+eta=c(0,1,2)
+divs=c('P','L')
+if(sbmbetapt_done==0){
+  gList=pointlevel_analysis$SubNetworks
+  nodenames=V(getMetaweb(gList))$name
+  nodegroups=unlist(lapply(nodenames,
+                           function(x) as.character(
+                             subset(trophic_groups,keys==x)[1,"trophic_group"])))
+  names(nodegroups)=nodenames
+  
+  for (div in c('P','L')){
+    for (e in eta){
+      sbmbetadiv_ptdf=betanet(gList = gList,
+                              groups=nodegroups,
+                              pt_names = lnames,
+                              div=div,
+                              eta=e,
+                              file_beta = paste(file_sbmbeta_pt,"_",e,"_",div,".csv",sep=""))
+    }
+  }
+
+  sbmbetapt_done=1
+}else{
+  sbmbetadiv_ptdf=read.csv2(file_sbmbeta_pt,row.names = 1)
+}
+x=pcoa_plot(D=as.dist(sbmbetadiv_ptdf),Y=NULL,corr="none")
+```
+
+<!-- Metaweb from SBM groups and projection to points -->
+<!-- ```{r} -->
+<!-- func_occur_pt<-aggregate_occur(agg_func_occur,pt_names,lgroups) -->
+<!-- ### Get SBM adjacency matrix, create SBM metaweb, project on local plots/points/repets given agg_func_occur, compute beta_diversity ### -->
+<!-- sbm_adj=read.csv2(file_sbm_adjacency,row.names = 1) -->
+<!-- sbm_adj[sbm_adj<1E-3]<-0 -->
+<!-- #sbm_adj[sbm_adj>=1E-3]<-1 -->
+<!-- rownames(sbm_adj)<-colnames(sbm_adj) -->
+<!-- mwsbm=graph_from_adjacency_matrix(as.matrix(sbm_adj),mode="directed",weighted=TRUE) -->
+<!-- E(mwsbm)$cooccur<-E(mwsbm)$weight -->
+<!-- E(mwsbm)$type<-rep("troph",vcount(mwsbm)) -->
+<!-- plot(mwsbm) -->
+
+<!-- sbm_mw=get.data.frame(mwsbm,what=c("both")) -->
+<!-- sbm_analysis=meta_bionet_workflow(sbm_mw$edges,agg_func_occur,sbm_mw$vertices, -->
+<!--                                name="BISE_SBM",pt_names, -->
+<!--                                edge_ends=c("from","to"),edge_attributes=c("type","cooccur"), -->
+<!--                                weight_att=2,type_att=1,min_prob=0,min_occur=1, -->
+<!--                                verb=0) -->
+<!-- ``` -->
+
+
+
+<!-- ## Analyzing the trophic web of groups inferred by SBM -->
+<!-- ```{r} -->
+<!-- #### Add cluster assignments to metaweb nodes #### -->
+<!-- cat("Adding cluster information to metaweb \n") -->
+<!-- metaweb$graph=set_vertex_attr(graph=metaweb$graph,name="cluster", -->
+<!--                               index = V(metaweb$graph), -->
+<!--                               value=trophic_groups$trophic_group) -->
+
+<!-- cat("Creating clustered metaweb \n") -->
+<!-- trophic_groups$broad=taxa_metadata$broad -->
+<!-- trophic_groups=merge(trophic_groups,taxa_metadata,by.x = 'keys',by.y = 'key') -->
+
+<!-- cat("Creating trophic group nodes \n") -->
+<!-- gt_nodes=lapply(1:argmax,function(x){ -->
+<!--   metadata=subset(trophic_groups,trophic_group==x) -->
+<!--   microhab=sapply(metadata[,c("surf","subsurf","soil")],max) -->
+<!--   rank=as.character(unique(metadata[,"rank"])) -->
+<!--   broad=as.character(unique(metadata[,"broad"])) -->
+<!--   node=Taxon$new(gbif_id=x, -->
+<!--                  label = paste('TG_',x,sep=""), -->
+<!--                  broad=as.vector(broad), -->
+<!--                  rank=as.vector(rank), -->
+<!--                  microhab=microhab) -->
+<!-- }) -->
+
+<!-- cat("Creating edge list from SBM probabilities \n") -->
+<!-- epsilon=1E-4 -->
+<!-- sbm_el=melt(sbm_adj,varnames = c("resource","consumer"),value.name = "cooccur") -->
+<!-- sbm_el$type="troph" -->
+<!-- ### Discrétiser -->
+<!-- sbm_el=sbm_el[!(sbm_el$cooccur<epsilon),] -->
+<!-- group_metaweb=MetaWeb$new(mwebname="BISE_GT", taxa=gt_nodes,  -->
+<!--                           edge_list=sbm_el[,c("resource","consumer")],  -->
+<!--                           edge_metadata=sbm_el[,c("cooccur","type")]) -->
+
+<!-- cat("Aggregating occurrences to groups in observation points \n") -->
+<!-- #agg_occur_groups=merge(agg_occur,trophic_groups[,c("trophic_group","keys")],by.x="key",by.y="keys") -->
+<!-- agg_occur_groups=agg_occur[,setdiff(colnames(agg_occur),"broad")] -->
+<!-- agg_occur_groups$TG=unlist(lapply(agg_occur$key,function(x) subset(trophic_groups,keys==as.character(x))[1,"trophic_group"])) -->
+
+<!-- observations=setdiff(colnames(agg_occur_groups),c("key","verbatimScientificName","TG")) -->
+<!-- sum_occur_groups=aggregate(agg_occur_groups[,observations],by = list(TG=agg_occur_groups$TG),FUN = sum) -->
+
+<!-- cat("Projecting group metaweb to observations \n") -->
+<!-- gmin_occur=1 -->
+<!-- group_subnets=lapply(observations, function(x){ -->
+<!--   community_compos=as.character(sum_occur_groups[which(sum_occur_groups[,x]>=gmin_occur),"TG"]) -->
+<!--   subnetwork=group_metaweb$project_metanetwork(sublist_taxa_keys = community_compos,net_name = x)  -->
+<!--   return(subnetwork) -->
+<!-- }) -->
+
+<!-- cat("Selecting trophic groups containing light \n") -->
+
+<!-- cat("Selecting trophic groups containing som \n") -->
+
+<!-- cat("Selecting trophic groups containing bacteria decomposers \n") -->
+
+<!-- cat("Selecting trophic groups containing fungi decomposers \n") -->
+
+<!-- cat("Computing and saving energy pathways metrics for trophic groups on observation points \n") -->
+<!-- group_topoenerg_metrics=lapply(group_subnets,topoenergetic_metrics) -->
+<!-- cpt=1 -->
+<!-- for (net in group_subnets){ -->
+<!--   print(paste("cpt=",cpt)) -->
+<!--   mets=topoenergetic_metrics(net) -->
+<!--   cpt=cpt+1 -->
+<!-- } -->
+<!-- group_topometrics_df=do.call(rbind,lapply(group_topoenerg_metrics, as.data.frame)) -->
+<!-- group_topometrics_df$observation_id=observations -->
+<!-- ### Saving ### -->
+<!-- write.csv2(topometrics_df,file="../../Applications/BISE/trophic_group_topo_energetics_metrics.csv",row.names = F) -->
+
+<!-- ``` -->
+
+
