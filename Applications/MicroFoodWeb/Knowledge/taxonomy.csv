@@ -16,8 +16,8 @@ Catenulisporaceae;Catenulisporaceae;3830;EXACT;96;ACCEPTED;FAMILY;Bacteria;Actin
 Caulobacteraceae;Caulobacteraceae;4723;EXACT;96;ACCEPTED;FAMILY;Bacteria;Proteobacteria;Alphaproteobacteria;Caulobacterales;Caulobacteraceae
 Cephalobidae;Cephalobidae;2560;EXACT;94;ACCEPTED;FAMILY;Animalia;Nematoda;Secernentea;Rhabditida;Cephalobidae
 Cercomonadidae;Cercomonadidae;2164;EXACT;94;ACCEPTED;FAMILY;Protozoa;Sarcomastigophora;Phytomastigophora;Ebriida;Cercomonadidae
-Cercozoa_MA;Cercozoa;38;EXACT;95;ACCEPTED;PHYLUM;Chromista;Cercozoa;;;
-Cercozoa_UC;Cercozoa;38;EXACT;95;ACCEPTED;PHYLUM;Chromista;Cercozoa;;;
+Cercozoa_MA;Cercozoa;38_01;EXACT;95;ACCEPTED;PHYLUM;Chromista;Cercozoa;;;
+Cercozoa_UC;Cercozoa;38_02;EXACT;95;ACCEPTED;PHYLUM;Chromista;Cercozoa;;;
 Chitinophagaceae;Chitinophagaceae;4903787;EXACT;96;ACCEPTED;FAMILY;Bacteria;Bacteroidetes;Sphingobacteriia;Sphingobacteriales;Chitinophagaceae
 Chthoniobacteraceae;Chthoniobacteraceae;9890342;EXACT;96;ACCEPTED;FAMILY;Bacteria;Verrucomicrobia;;;Chthoniobacteraceae
 Chthonomonadaceae;Chthonomonadaceae;7481228;EXACT;96;ACCEPTED;FAMILY;Bacteria;Armatimonadetes;Chthonomonadetes;Chthonomonadales;Chthonomonadaceae
@@ -92,7 +92,7 @@ OPS17;Bacteria;3_05;EDITED;100;ACCEPTED;KINGDOM;Bacteria;;;;
 P3OB-42;Bacteria;3_06;EDITED;100;ACCEPTED;KINGDOM;Bacteria;;;;
 SC-I-84;Bacteria;3_07;EDITED;100;ACCEPTED;KINGDOM;Bacteria;;;;
 Aquaspirillaceae;Betaproteobacteria;362_01;EDITED;;ACCEPTED;FAMILY;Bacteria;Proteobacteria;Gammaproteobacteria;Betaproteobacteriales;Aquaspirillaceae
-Babeliaceae;Bacteria;3_02;EDITED;;ACCEPTED;FAMILY;Bacteria;Dependentiae;Babeliae;Babeliales;Babeliaceae
+Babeliaceae;Bacteria;3_08;EDITED;;ACCEPTED;FAMILY;Bacteria;Dependentiae;Babeliae;Babeliales;Babeliaceae
 Devosiaceae;Rhizobiales;1221_01;EDITED;;ACCEPTED;FAMILY;Bacteria;Proteobacteria;Alphaproteobacteria;Rhizobiales;Devosiaceae
 Diplorickettsiaceae;Gammaproteobacteria;362_02;EDITED;;ACCEPTED;FAMILY;Bacteria;Proteobacteria;Gammaproteobacteria;Diplorickettsiales;Diplorickettsiaceae
 Entotheonellaceae;Deltaproteobacteria;338_01;EDITED;;ACCEPTED;FAMILY;Bacteria;Proteobacteria;Deltaproteobacteria;Entotheonellales;Entotheonellaceae
@@ -100,7 +100,7 @@ Gimesiaceae;Planctomycetales;1218_01;EDITED;;ACCEPTED;FAMILY;Bacteria;Planctomyc
 Inquilinaceae;Alphaproteobacteria;197_01;EDITED;;ACCEPTED;FAMILY;Bacteria;Proteobacteria;Alphaproteobacteria;Azospirillales;Inquilinaceae
 Koribacteraceae;Acidobacteriales;1197_01;EDITED;;ACCEPTED;FAMILY;Bacteria;Acidobacteria;Acidobacteriia;Acidobacteriales;Koribacteraceae
 Magnetospirillaceae;Rhodospirillales;1223_01;EDITED;;ACCEPTED;FAMILY;Bacteria;Proteobacteria;Alphaproteobacteria;Rhodospirillales;Magnetospirillaceae
-Mitochondria;Bacteria;3_08;EDITED;;ACCEPTED;KINGDOM;Bacteria;;;;
+Mitochondria;Bacteria;3_09;EDITED;;ACCEPTED;KINGDOM;Bacteria;;;;
 Mucoromycota;Mucorales;749_01;EDITED;;ACCEPTED;FAMILY;Fungi;Zygomycota;Mucoromycetes;Mucorales;Mucoromycota
 Nitrosotaleaceae;Archaea;2_01;EDITED;;ACCEPTED;FAMILY;Archaea;Thaumarchaeota;Nitrososphaeria;Nitrosotaleales;Nitrosotaleaceae
 Paracaedibacteraceae;Alphaproteobacteria;197_02;EDITED;;ACCEPTED;FAMILY;Bacteria;Proteobacteria;Alphaproteobacteria;Holosporales;Paracaedibacteraceae
@@ -111,7 +111,7 @@ Rhodomicrobiaceae;Rhizobiales;1221;EDITED;;ACCEPTED;FAMILY;Bacteria;Proteobacter
 Schlesneriaceae;Schleiferiaceae;8245257;EDITED;64;ACCEPTED;FAMILY;Bacteria;Bacteroidetes;Flavobacteriia;Flavobacteriales;Schlesneriaceae
 Solibacteraceae;Acidobacteria;25_01;EDITED;;ACCEPTED;FAMILY;Bacteria;Acidobacteria;Acidobacteriia;Solibacterales;Solibacteraceae
 Thermoanaerobaculaceae;Acidobacteria;25_02;EDITED;;ACCEPTED;FAMILY;Bacteria;Acidobacteria;Thermoanaerobaculia;Thermoanaerobaculales;Thermoanaerobaculaceae
-Vermiphilaceae;Bacteria;3_03;EDITED;;ACCEPTED;FAMILY;Bacteria;Dependentiae;Babeliae;Babeliales;Vermiphilaceae
+Vermiphilaceae;Bacteria;3_10;EDITED;;ACCEPTED;FAMILY;Bacteria;Dependentiae;Babeliae;Babeliales;Vermiphilaceae
 Zoopagomycota_UC;Zoopagomycetes;5_01;EDITED;;ACCEPTED;FAMILY;Fungi;Zygomycota;Zoopagomycetes;Zoopagales;Zoopagomycota
 SOM;SOM;R_01;FICT;;;RESOURCE;SOM;;;;
 CO2;CO2;R_02;FICT;;;RESOURCE;CO2;;;;

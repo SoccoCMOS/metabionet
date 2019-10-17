@@ -17,6 +17,7 @@ library(econetwork)
 library(entropy)
 library(hillR)
 library(ape)
+library(ggplot2)
 
 
 ##### Source all needed files #####

@@ -1,19 +1,17 @@
 ---
-title: 'Micro food web'
-output:
-  html_document:
-    df_print: paged
+title: "Micro food web"
+output: word_document
 encoding: UTF-8
 ---
 
 ```{r setup }
-knitr::opts_knit$set(root.dir = "C:/Users/simoussi/Documents/Thesis_coding/Chantier2_KnowledgeBasedApproaches/meta-bio-net/")
+knitr::opts_knit$set(root.dir = "D:/Knowledge-based/BISE/meta-bio-net/Bionet_V2/")
 knitr::opts_knit$set(warning = FALSE, include=FALSE)
 ```
 
-#Setting global parameters
+#### Setting global parameters
 ```{r warning=FALSE, include=FALSE}
-workdir="C:/Users/simoussi/Documents/Thesis_coding/Chantier2_KnowledgeBasedApproaches/meta-bio-net/"
+workdir="D:/Knowledge-based/BISE/meta-bio-net/Bionet_V2/"
 source(paste(workdir,"Init.R",sep=""))
 ### Files
 file_tg=paste(workdir,"Applications/MicroFoodWeb/Knowledge/tg.csv",sep="")
@@ -47,8 +45,8 @@ outfile_fdiv=paste(workdir,"Applications/MicroFoodWeb/Results/functional_diversi
 ### Saving ###
 ```
 
-#Load KB
-```{r warning=FALSE, include=FALSE}
+#### Load KB
+```{r warning=FALSE}
 taxo=read.csv2(file_taxo)
 tg=read.csv2(file_tg)
 tg_fw=read.csv2(file_tg_fw)
@@ -62,20 +60,20 @@ taxo_tg$subsurf=rep(1,dim(taxo_tg)[1])
 taxo_tg$soil=rep(1,dim(taxo_tg)[1])
 ```
 
-#Generate taxa-level KB
-```{r warning=FALSE, include=FALSE}
+#### Generate taxa-level KB
+```{r warning=FALSE}
 consumers=merge(tg_fw,taxo_tg[c("scientificName","key","trophicGroup")],by.x="consumer_TG",by.y="trophicGroup")
 taxa_fw=merge(consumers,taxo_tg[c("scientificName","key","trophicGroup")],by.x="resource_TG",by.y="trophicGroup",suffixes = c("_consumer","_resource"))
 
 taxa_fw$cooccur<-rep(1,dim(taxa_fw)[1])
-
+write.csv2(taxa_fw,"metafoodweb.csv")
 rm(consumers)
 
 taxa_metadata<-unique(taxo_tg[,-2])
 ```
 
-#Creating metanetwork
-```{r warning=FALSE, include=FALSE}
+#### Creating metanetwork
+```{r warning=FALSE}
 taxa_nodes=apply(taxa_metadata,1, function(x){
     microhab=list(surf=x["surf"],subsurf=x["subsurf"],soil=x["soil"])
     node=Taxon$new(gbif_id=as.character(x['key']),
@@ -90,9 +88,16 @@ metaweb=MetaWeb$new(
   edge_metadata=taxa_fw[,edge_attributes],res_name="key_resource",cons_name="key_consumer",type="interaction_type",cooccur="cooccur")
 
 metaweb$print()
+g=metaweb$graph
+plot(g,
+     vertex.label=V(g)$scName,
+     vertex.color=rainbow(10)[as.factor(V(g)$broad)],
+     vertex.size=10,
+     plot.layout=layout_as_tree)
+
 ```
 
-#Load data
+#### Load data
 ```{r}
 occur=merge(subset(read.csv2(file_occur),(ScientificName %in% taxa_metadata$scientificName)),taxa_metadata[c("key","scientificName")],by.x="ScientificName",by.y="scientificName")
 design=read.csv2(file_design)
@@ -100,16 +105,16 @@ pt_names=as.character(design[,lev])
 ```
 
 
-#Creating local networks
+### Creating local networks
 ```{r}
-subnets=lapply(as.vector(pt_names[,1]), function(x){
+subnets=lapply(as.vector(pt_names), function(x){
     community_compos=as.character(occur[which(occur[,x]>=min_occur),"key"])
     subnetwork=metaweb$project_metanetwork(sublist_taxa_keys = community_compos,net_name = x,verbose=verb) 
     return(subnetwork)
   })
 ```
 
-#Compute alpha metrics on the metaweb and local networks
+#### Compute alpha metrics on the metaweb and local networks
 ```{r}
 broad_light=c("plant")
 broad_som=c("SOM")
@@ -129,43 +134,49 @@ topometrics_df$observation_id=c(as.character(design$Pot),"metaweb")
 write.csv2(topometrics_df,outfile_metrics)
 ```
 
-#Compute betadiversity between plots
-```{r, echo=FALSE}
+#### Compute betadiversity between plots
+```{r echo=T, results='hide'}
 eta=c(0,1,2)
 div=c('P','L')
 labdiv=c('Taxonomic','Link')
 names(labdiv)=div
 groups=as.character(design$Trt)
-beta_list=list()
-for (d in div){
-  ## Type of diversity assessed
-  for (e in eta){
-    ## Hill number
-    betadivdf=betanet(gList=subnets,groups=NULL,
-                        file_beta = 
-                        paste(outfile_beta,e,"_",d,".csv",sep=""),
-                        pt_names = pt_names,div=d,eta=e)
-    
-    beta_list[d][e]=betadivdf
-  }
-}
+
+params=vector(mode="list",length=length(eta)*length(div))
+cpt=1
+for(d in div) for (e in eta){
+  params[[cpt]]=list(e=e,d=d)
+  cpt=cpt+1
+} 
+
+beta_list=lapply(1:length(params),function(x){
+  betadivdf=betanet(gList=subnets,groups=NULL,
+                  file_beta = 
+                    paste(outfile_beta,params[[x]]$e,"_",params[[x]]$d,".csv",sep=""),
+                  pt_names = pt_names,div=params[[x]]$d,eta=params[[x]]$e)
+  
+  return(betadivdf)
+})
+
+
 ```
 
-#PCOA of betadiversity between plots
+## PCOA of betadiversity between plots
 ```{r}
-for (d in div){
-  ## Type of diversity assessed
-  for (e in eta){
-    ## Hill number
-    pcoa=pcoa_plot(D=as.dist(betadivdf),Y=NULL,corr="none",groups=groups,title=paste("Betadiversity :",labdiv[d],"turnover, Hill number= ",e))
-    
-    pcoa$plot
-  }
-}
+pcoa_list=lapply(1:length(params), function(x) {
+  pcoa=pcoa_plot(D=as.dist(beta_list[[x]]),Y=NULL,
+               corr="none",groups=groups,
+            title=paste(
+              "Betadiversity :",labdiv[params[[x]]$d],
+              "turnover, Hill number= ",params[[x]]$e))
+  
+  print(pcoa$plot)
+  
+})
 
 ```
 
-#Functional redundancy within plots
+#### Functional redundancy within plots
 ```{r}
 ###Occurrence of groups
 occur_tg=merge(taxo_tg,occur,by="key")
