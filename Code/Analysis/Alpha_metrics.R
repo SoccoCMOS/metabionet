@@ -5,16 +5,6 @@
 # -----------------------------------------------------------------------------
 #source("../Analysis/Util.R")
 
-broad_light=c("light")
-broad_som=c("som")
-
-broad_fungi=c("fungi")
-broad_bacteria=c("bacterie","archae")
-
-att="broad"
-scNames_opp=c()
-scNames_min=c()
-
 #################################################### BEGIN(alpha metrics) #############################################################
 topoenergetic_metrics<-function(net){#,broad_light=broad_light,broad_som=broad_som,att="broad"){
   nb_edge <- ecount(net)

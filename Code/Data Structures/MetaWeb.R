@@ -7,7 +7,7 @@ MetaWeb <- R6Class("MetaWeb", list(
   graph = NA, ### Actual interaction network: igraph object
   
   ### Object functions ###
-  initialize = function(mwebname, taxa, edge_list, edge_metadata=NA) {
+  initialize = function(mwebname, taxa, edge_list, edge_metadata=NA,res_name="resource",cons_name="consumer",type="type",cooccur="cooccur") {
     self$webname <- mwebname
     self$nodes <- taxa
     ### Create empty graph ###
@@ -21,14 +21,14 @@ MetaWeb <- R6Class("MetaWeb", list(
       set_vertex_attr("broad",value=unlist(lapply(taxa,FUN=function(x) x$broadtype)))%>%
       
       ### Add edges and their attributes ###
-      add_edges(edges=as.vector(t(as.matrix(edge_list[,c("resource","consumer")]))),
-                attr = list(type=as.character(edge_metadata[,"type"]),weight=as.double(edge_metadata[,"cooccur"]))
+      add_edges(edges=as.vector(t(as.matrix(edge_list[,c(res_name,cons_name)]))),
+                attr = list(type=as.character(edge_metadata[,type]),weight=as.double(edge_metadata[,cooccur]))
       )
   },
   
   print = function(){
-    cat("Metaweb: \n")
-    cat("  Name: ",self$webname, "\n", sep = "")
+    cat(" Metaweb: \n")
+    cat(" Name: ",self$webname, "\n", sep = "")
     cat(" Network statistics: \n")
     cat(" Number of taxa: ",igraph::vcount(self$graph),"\n", sep = "")
     cat(" Number of interactions: ",igraph::ecount(self$graph),"\n", sep = "")
@@ -56,7 +56,7 @@ MetaWeb <- R6Class("MetaWeb", list(
     subnetwork=induced_subgraph(self$graph,vids=sublist_taxa_keys,impl="create_from_scratch")
     if(verbose==1){
       cat("Projected trophic web: \n")
-      cat("  Name: ",net_name, "\n", sep = "")
+      cat("Name: ",net_name, "\n", sep = "")
       cat(" Network statistics: \n")
       cat(" Number of taxa: ",vcount(subnetwork),"\n", sep = "")
       cat(" Number of interactions: ",ecount(subnetwork),"\n", sep = "")

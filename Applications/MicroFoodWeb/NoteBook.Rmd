@@ -1,0 +1,180 @@
+---
+title: 'Micro food web'
+output:
+  html_document:
+    df_print: paged
+encoding: UTF-8
+---
+
+```{r setup }
+knitr::opts_knit$set(root.dir = "C:/Users/simoussi/Documents/Thesis_coding/Chantier2_KnowledgeBasedApproaches/meta-bio-net/")
+knitr::opts_knit$set(warning = FALSE, include=FALSE)
+```
+
+#Setting global parameters
+```{r warning=FALSE, include=FALSE}
+workdir="C:/Users/simoussi/Documents/Thesis_coding/Chantier2_KnowledgeBasedApproaches/meta-bio-net/"
+source(paste(workdir,"Init.R",sep=""))
+### Files
+file_tg=paste(workdir,"Applications/MicroFoodWeb/Knowledge/tg.csv",sep="")
+file_tg_fw=paste(workdir,"Applications/MicroFoodWeb/Knowledge/prior_tg_fw.csv",sep="")
+file_taxo=paste(workdir,"Applications/MicroFoodWeb/Knowledge/taxonomy.csv",sep="")
+
+file_occur=paste(workdir,"Applications/MicroFoodWeb/Data/occurence.csv",sep="")
+file_abund=paste(workdir,"Applications/MicroFoodWeb/Data/abundance.csv",sep="")
+file_design=paste(workdir,"Applications/MicroFoodWeb/Data/design.csv",sep="")
+
+### Data structures
+##Knowledge base: what columns to fetch
+edge_ends_tg=c("resource_TG","consumer_TG")
+edge_ends_taxa=c("key_resource","key_consumer")
+edge_attributes=c("interaction_type","cooccur")
+taxa_attributes=c("scientificName","trophicGroup","key","rank",
+                  "kingdom","phylum","class","order","family")
+
+### Level of organization of experimental setting ###
+levels=c("Pot","Trt","Rep")
+lev="Pot"
+min_occur=1
+verb=1
+
+### Output files
+outfile_metrics=paste(workdir,"Applications/MicroFoodWeb/Results/topometrics.csv",sep="")
+outfile_beta=paste(workdir,"Applications/MicroFoodWeb/Results/beta_diversity",sep="")
+outfile_fredund=paste(workdir,"Applications/MicroFoodWeb/Results/functional_redundancy.csv",sep="")
+
+outfile_fdiv=paste(workdir,"Applications/MicroFoodWeb/Results/functional_diversity.csv",sep="")
+### Saving ###
+```
+
+#Load KB
+```{r warning=FALSE, include=FALSE}
+taxo=read.csv2(file_taxo)
+tg=read.csv2(file_tg)
+tg_fw=read.csv2(file_tg_fw)
+
+taxo_tg=merge(tg,taxo,by.x="scientificName",by.y="verbatimScientificName")[taxa_attributes]
+rm(taxo)
+rm(tg)
+
+taxo_tg$surf=rep(1,dim(taxo_tg)[1])
+taxo_tg$subsurf=rep(1,dim(taxo_tg)[1])
+taxo_tg$soil=rep(1,dim(taxo_tg)[1])
+```
+
+#Generate taxa-level KB
+```{r warning=FALSE, include=FALSE}
+consumers=merge(tg_fw,taxo_tg[c("scientificName","key","trophicGroup")],by.x="consumer_TG",by.y="trophicGroup")
+taxa_fw=merge(consumers,taxo_tg[c("scientificName","key","trophicGroup")],by.x="resource_TG",by.y="trophicGroup",suffixes = c("_consumer","_resource"))
+
+taxa_fw$cooccur<-rep(1,dim(taxa_fw)[1])
+
+rm(consumers)
+
+taxa_metadata<-unique(taxo_tg[,-2])
+```
+
+#Creating metanetwork
+```{r warning=FALSE, include=FALSE}
+taxa_nodes=apply(taxa_metadata,1, function(x){
+    microhab=list(surf=x["surf"],subsurf=x["subsurf"],soil=x["soil"])
+    node=Taxon$new(gbif_id=as.character(x['key']),
+                   label = as.character(x['scientificName']),
+                   broad=as.character(x['kingdom']),
+                   rank=as.character(x['rank']),
+                   microhab=microhab)
+  })
+
+metaweb=MetaWeb$new(
+  mwebname="microfoodweb", taxa=taxa_nodes, edge_list=taxa_fw[,edge_ends_taxa],   
+  edge_metadata=taxa_fw[,edge_attributes],res_name="key_resource",cons_name="key_consumer",type="interaction_type",cooccur="cooccur")
+
+metaweb$print()
+```
+
+#Load data
+```{r}
+occur=merge(subset(read.csv2(file_occur),(ScientificName %in% taxa_metadata$scientificName)),taxa_metadata[c("key","scientificName")],by.x="ScientificName",by.y="scientificName")
+design=read.csv2(file_design)
+pt_names=as.character(design[,lev])
+```
+
+
+#Creating local networks
+```{r}
+subnets=lapply(as.vector(pt_names[,1]), function(x){
+    community_compos=as.character(occur[which(occur[,x]>=min_occur),"key"])
+    subnetwork=metaweb$project_metanetwork(sublist_taxa_keys = community_compos,net_name = x,verbose=verb) 
+    return(subnetwork)
+  })
+```
+
+#Compute alpha metrics on the metaweb and local networks
+```{r}
+broad_light=c("plant")
+broad_som=c("SOM")
+
+broad_fungi=c("Fungi")
+broad_bacteria=c("Bacteria","Archaea")
+
+att="broad"
+scNames_opp=c()
+scNames_min=c()
+
+topoenerg_metrics=lapply(subnets,topoenergetic_metrics)
+topoenerg_metrics[[length(topoenerg_metrics)+1]]=topoenergetic_metrics(metaweb$graph)
+
+topometrics_df=do.call(rbind,lapply(topoenerg_metrics, as.data.frame))
+topometrics_df$observation_id=c(as.character(design$Pot),"metaweb")
+write.csv2(topometrics_df,outfile_metrics)
+```
+
+#Compute betadiversity between plots
+```{r, echo=FALSE}
+eta=c(0,1,2)
+div=c('P','L')
+labdiv=c('Taxonomic','Link')
+names(labdiv)=div
+groups=as.character(design$Trt)
+beta_list=list()
+for (d in div){
+  ## Type of diversity assessed
+  for (e in eta){
+    ## Hill number
+    betadivdf=betanet(gList=subnets,groups=NULL,
+                        file_beta = 
+                        paste(outfile_beta,e,"_",d,".csv",sep=""),
+                        pt_names = pt_names,div=d,eta=e)
+    
+    beta_list[d][e]=betadivdf
+  }
+}
+```
+
+#PCOA of betadiversity between plots
+```{r}
+for (d in div){
+  ## Type of diversity assessed
+  for (e in eta){
+    ## Hill number
+    pcoa=pcoa_plot(D=as.dist(betadivdf),Y=NULL,corr="none",groups=groups,title=paste("Betadiversity :",labdiv[d],"turnover, Hill number= ",e))
+    
+    pcoa$plot
+  }
+}
+
+```
+
+#Functional redundancy within plots
+```{r}
+###Occurrence of groups
+occur_tg=merge(taxo_tg,occur,by="key")
+func_redund=aggregate(x=occur_tg[,as.character(design$Pot)],
+                      FUN = sum,by = list(TG=occur_tg$trophicGroup))
+
+write.csv2(func_redund,outfile_fredund)
+
+fct_div=redund_fct(func_redund,as.character(design$Pot))
+write.csv2(fct_div,outfile_fdiv)
+```
+

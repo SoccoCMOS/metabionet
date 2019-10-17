@@ -211,10 +211,15 @@ redund_fct<-function(agg_func_occur,pt_names,eta=c(0,1,2)){
 
 #################### Plot functions ################################################
 ###PCOA
-pcoa_plot=function(D,Y=NULL,corr="none"){
+pcoa_plot=function(D,Y=NULL,corr="none",groups=NULL,pt_names=NULL,title="PCoA"){
   x=pcoa(D, correction=corr)
-  # S3 method for pcoa
-  biplot(x, Y)
-  
-  return(x)
+  data=data.frame(x$vectors[,1:2])
+  colnames(data)<-c("PC1","PC2")
+  data$group=groups
+
+  p<- ggplot(data,aes(x=PC1,y=PC2,colour=group,label = row.names(data))) + 
+    geom_point(size =5) +
+    geom_text(col = 'black') +
+    ggtitle(title)
+  return(list(pcoa=x,plot=p))
 }
