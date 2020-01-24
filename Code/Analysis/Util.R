@@ -40,8 +40,20 @@ get_energy_roots<-function(net,attribute=c("broad","scName"),target_lists,filter
   return(starters)
 }
 
-pathways_stat<-function(net,node_sources){    
-### Computes pathways statistics => 
+path_wdist<-function(net,root,par_wd=0,par_ab=0,att_name='wd',ab_name='abund',mode='out'){
+  ab=get.vertex.attribute(net,ab_name,root)
+  old_wd=get.vertex.attribute(net,att_name,root)
+  new_wd=old_wd+par_wd+par_ab*ab
+  net<-set.vertex.attribute(net,att_name,root,new_wd)
+  succ=neighbors(graph = net,v=V(net)[root],mode=mode)$name
+  for(s in succ){
+    net <- path_wdist(net,root=s,par_wd=new_wd,par_ab=ab,att_name=att_name,ab_name=ab_name,mode=mode)
+  }
+  return(net)
+}
+
+pathways_stat<-function(net,node_sources,ab_name='abund',mode='out'){    
+  ### Computes pathways statistics => 
   #net: igraph object
   ## node_sources: output of get_energy_roots 
   if(vcount(net)==0){
@@ -60,19 +72,19 @@ pathways_stat<-function(net,node_sources){
     
     cpt=0
     for (root in node_sources){
+      att_name=paste('wd',root,sep = '_')
+      net <- set.vertex.attribute(net,att_name,index=V(net),value=rep(0,vcount(net)))
+      net <- path_wdist(net=net,root=root,par_wd=0,par_ab=0,att_name=att_name,ab_name=ab_name,mode=mode)
       cpt=cpt+1
-      d=bfs(net, root, neimode = c("out"), 
-            unreachable = FALSE, restricted = NULL, order = TRUE, rank = FALSE,
-            father = FALSE, pred = FALSE, succ = FALSE, dist = TRUE,
-            callback = NULL, extra = NULL, rho = parent.frame()) 
       
-      roads=d$dist[which(!is.na(d$dist))]
+      roads=vertex.attributes(net)[att_name][[1]]
+      names(roads)=V(net)$name
       sums[cpt]=sum(roads)
       moys[cpt]=mean(roads)
       meds[cpt]=median(roads)
       sds[cpt]=sd(roads)
       maxs[cpt]=max(roads)
-      ncov=union(ncov,names(which(!is.na(d$dist))))
+      ncov=union(ncov,names(which(roads>0)))
     }
     
     nbcov=length(ncov)
@@ -80,6 +92,7 @@ pathways_stat<-function(net,node_sources){
   }
   return(brg_stat)
 }
+
 
 ratio<-function(a,b){
   if(is.na(a) || is.na(b)){
@@ -95,14 +108,14 @@ ratio<-function(a,b){
   }
 }
 
-energypathways_detail <- function(net,x,y,labx="x",laby="y"){   ### Analysis of a single network
+energypathways_detail <- function(net,x,y,labx="x",laby="y",ab_name='abund',mode='out'){   ### Analysis of a single network
   X=pathways_stat(net,x)
   Y=pathways_stat(net,y)
   
   ### X/Y statistics
-  XF=data.frame(source=labx,sum=X$sum_pathsize, med=X$median_pathsize,mean=X$mean_pathsize,sd=X$sd_pathsize,nbcovered=X$nbcovered_taxa)
-  YF=data.frame(source=laby,sum=Y$sum_pathsize, med=Y$median_pathsize,mean=Y$mean_pathsize,sd=Y$sd_pathsize,nbcovered=Y$nbcovered_taxa)
-  comb=data.frame(source=paste(labx,laby,sep="/"),sum=ratio(X$sum_pathsize,Y$sum_pathsize), med=ratio(X$median_pathsize,Y$median_pathsize),mean=ratio(X$mean_pathsize,Y$mean_pathsize),sd=ratio(X$sd_pathsize,Y$sd_pathsize),nbcovered=ratio(X$nbcovered_taxa,Y$nbcovered_taxa))
+  XF=data.frame(source=labx,max_pathsize=X$max_dist,sum=X$sum_pathsize, med=X$median_pathsize,mean=X$mean_pathsize,sd=X$sd_pathsize,nbcovered=X$nbcovered_taxa)
+  YF=data.frame(source=laby,max_pathsize=Y$max_dist,sum=Y$sum_pathsize, med=Y$median_pathsize,mean=Y$mean_pathsize,sd=Y$sd_pathsize,nbcovered=Y$nbcovered_taxa)
+  comb=data.frame(source=paste(labx,laby,sep="/"),max=ratio(X$max_dist,Y$max_dist),sum=ratio(X$sum_pathsize,Y$sum_pathsize), med=ratio(X$median_pathsize,Y$median_pathsize),mean=ratio(X$mean_pathsize,Y$mean_pathsize),sd=ratio(X$sd_pathsize,Y$sd_pathsize),nbcovered=ratio(X$nbcovered_taxa,Y$nbcovered_taxa))
   out=list(X=XF,Y=YF,RatioXY=comb)
   
   return(out)
